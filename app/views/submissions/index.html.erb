@@ -1,27 +1,39 @@
-<h1>Listing submissions</h1>
+<div id="main">
+	<h1>Burn Bad Luck</h1>
+	<p>Okay, so this is suppose to be the home page</p>
+	
+	<div id="about-link">
+		<!--h2><a id='test' href='http://localhost:3000/about'>ABOUT</a></h2-->
+		<a id='test' href='http://localhost:3000/about'>ABOUT</a>
+	</div>
+	
+	<br />
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+	<div id ="new-submission">
+		<!--a id='test' href='http://localhost:3000/submissions/new'>NEW</a-->
+		SUBMIT YOUR BAD LUCK <br />
+		<%= render 'form' %>
+	</div>
+	
+	<br />
 
-<% @submissions.each do |submission| %>
-  <tr>
-    <td><%= submission.name %></td>
-    <td><%= submission.email %></td>
-    <td><%= submission.content %></td>
-    <td><%= link_to 'Show', submission %></td>
-    <td><%= link_to 'Edit', edit_submission_path(submission) %></td>
-    <td><%= link_to 'Destroy', submission, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+	<div id ="list-submission">
+		<% @submissions.reverse_each do |submission| %>
+  		<dl>
+			<dt><%= submission.name %></dt>
+  			<dd><%= submission.email %></dd>
+    		<dd><%= submission.content %></dd>
+    		<!--td><%= link_to 'Show', submission %></td>
+    		<td><%= link_to 'Edit', edit_submission_path(submission) %></td-->
+    		<dd><%= link_to 'Destroy', submission, confirm: 'Are you sure?', method: :delete %></dd>
+  		</dl>
+  		<% end %>
+	</div>
+	<br />
+</div>
 
-<br />
-
-<%= link_to 'New Submission', new_submission_path %>
+<div id="timer">
+	COUNTDOWN TIMER
+	<div id="counter"></div>
+	TO LUNAR NEW YEAR	
+</div>
