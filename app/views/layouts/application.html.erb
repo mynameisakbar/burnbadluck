@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"
+     xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-  <title>Burnbadluck</title>
+  <title>Burn Bad Luck</title>
   <%= stylesheet_link_tag    "application" %>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->    
+  
+  <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+  <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+  
+  <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+  <%= stylesheet_link_tag 'custom', :media => 'screen' %>  
+  
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div id="fb-root"></div>
+	<!--script src="http://connect.facebook.net/en_US/all.js"></script>
+	<script>
+    FB.init({ 
+        appId:'342304519131396', cookie:true, 
+        status:true, xfbml:true, oauth:true
+    });
+	</script-->
+	
+	<div class="container">
+      <header>
+        <%= image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+        <nav id="soc-button" class="round">
+        	<div class="fb-like" data-href="http://www.facebook.com/heydiaspora" data-send="false" data-layout="button_count" data-width="30" data-show-faces="false"></div>
+        	<a href="https://twitter.com/share" class="twitter-share-button" data-text="Burn your bad luck with us NAO!" data-hashtags="burnbadluck" data-url="http://www.burnbadluck.com" data-lang="en">Tweet</a>
+        </nav>
+      </header>
+      
+      <section class="round">
+        <%= yield %>
+      </section>
+    </div>
 </body>
 </html>
