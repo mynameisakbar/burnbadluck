@@ -18,7 +18,7 @@ class SubmissionsController < ApplicationController
     @submission = Submission.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html { redirect_to submissions_url }# show.html.erb
       format.json { render json: @submission }
     end
   end
@@ -29,7 +29,7 @@ class SubmissionsController < ApplicationController
     @submission = Submission.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { redirect_to submissions_url } # new.html.erb
       format.json { render json: @submission }
     end
   end
