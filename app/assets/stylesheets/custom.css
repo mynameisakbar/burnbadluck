@@ -1,5 +1,6 @@
 body { background: #000;
 	margin:0;
+	overflow-x:hidden;
 }
 
 header { background: #fff; }
@@ -21,26 +22,40 @@ header { background: #fff; }
 /*h2 { margin: 0 }
 */
 
-section {
+.section {
   width: 500px;
-  background: #fff;
-  margin: 10px auto;   
+  margin: 0 auto;   
   text-align: center;
 }
 
 #main {
   margin: 0 auto;
+  width:500px;
+  text-align:center;
+  position:relative; 
+  bottom:46px;
 }
 
 #about-link { 
-  border: solid red;
-  margin: 0 200px 15px 200px;
+  /*border: solid red;
+  margin: 0 200px 15px 200px;*/
+  background:url(/assets/about-rope.png);
+  width:120px;
+  height:250px;
+  margin:0 auto;
 }
 
 #new-submission { 
-  border: solid red; 
-  margin: 0 50px 0 50px;
+  /*border: solid red;*/
+  background:url(/assets/main.png);
+  background-repeat:no-repeat;
+  margin:0 auto;
   text-align: left;
+  height:400px;
+  width:454px;
+  position:relative;
+  bottom:18px;
+  left:20px;
 }
 
 dl { 
@@ -80,3 +95,48 @@ br { clear: both; }
   font-weight: bold;
   color: #000;
 }
+
+#dragonR{
+	background:url(/assets/dragon-L.png);
+	background-repeat:no-repeat;
+	position:relative;
+	height:400px;
+	width:340px;
+	float:left;
+	right:280px;
+	top:200px;
+}
+
+#dragonL{
+	background:url(/assets/dragon-r.png);
+	background-repeat:no-repeat;
+	position:relative;
+	height:400px;
+	width:340px;
+	float:right;
+	top:200px;
+	
+}
+
+.fb-like{
+	left:650px;
+}
+
+/*.twitter-share-button{
+	position:relative;
+	left:470px;
+}*/
+
+.twitter{
+	position:relative;
+	bottom:23px;
+	left:570px;
+}
+
+#submit-text img{
+	position:relative;
+	height:70px;
+	bottom:80px;
+	left:20px;
+}
+
