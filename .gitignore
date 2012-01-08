@@ -7,6 +7,4 @@ doc/
 *~
 .project
 .DS_Store
-config/*.yml
-config/database.yml
 .sass-cache/
