@@ -28,13 +28,13 @@
 	</script-->
 	
 	<div class="container">
-      <header>
-        <%= image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+		<!--header-->
+        <span id="logo"><%= image_tag("logo.png", :alt => "Sample App", :class => "round") %></span>
         <nav id="soc-button" class="round">
         	<div class="fb-like" data-href="http://www.facebook.com/heydiaspora" data-send="false" data-layout="button_count" data-width="30" data-show-faces="false"></div>
         	<a href="https://twitter.com/share" class="twitter-share-button" data-text="Burn your bad luck with us NAO!" data-hashtags="burnbadluck" data-url="http://www.burnbadluck.com" data-lang="en">Tweet</a>
         </nav>
-      </header>
+      	<!--/header-->
       
       <section class="round">
         <%= yield %>
