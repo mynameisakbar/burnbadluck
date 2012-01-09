@@ -13,6 +13,12 @@ header { background: #fff; }
 	margin:0 auto;
 }
 
+textarea {
+	width:350px;
+	height:100px;
+	padding 5px;
+}
+
 #logo {
     float:left;
 }
@@ -45,6 +51,11 @@ header { background: #fff; }
   margin:0 auto;
 }
 
+#thx-link {
+  text-align: left;
+  display: none;
+}
+
 #new-submission { 
   /*border: solid red;*/
   background:url(/assets/main.png);
@@ -54,8 +65,15 @@ header { background: #fff; }
   height:400px;
   width:454px;
   position:relative;
-  bottom:18px;
-  left:20px;
+  bottom:50px;
+  left:42px;
+  padding:15px;
+}
+
+form{
+	position:relative;
+	bottom:80px;
+	left:8px;
 }
 
 dl { 
@@ -63,6 +81,7 @@ dl {
   margin: 50px;
   text-align: left;
   padding: 15px;
+  color:white;
 }
 
 dd {
@@ -133,10 +152,8 @@ br { clear: both; }
 	left:570px;
 }
 
-#submit-text img{
+#submit-text {
 	position:relative;
-	height:70px;
 	bottom:80px;
-	left:20px;
 }
 

@@ -1,6 +1,26 @@
 // this is for COLORBOX
 $(function(){
-    $('#test').colorbox();
+    $('.normal-pop').colorbox(
+        {
+            height: "500px",
+            href: "/about"
+        });
+    
+    $('#test').colorbox(
+        {
+            inline:true, 
+            href:"#thx-link", 
+            width:"550px", 
+            height:"500px",
+            onOpen:function()
+            {
+                $('#thx-link').css({"display":"block"}); 
+            },
+            onClosed:function()
+            {
+                $('#thx-link').css({"display":"none"});
+            }
+    });
 });
 
 // this is for COUNTDOWN TIMER

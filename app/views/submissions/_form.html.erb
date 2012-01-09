@@ -10,6 +10,13 @@
       </ul>
     </div>
   <% end %>
+	
+	
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </div>
+  * Y&R reserves the right to remove any inappropriate submissions
 
   <div class="field">
     <%= f.label :name %><br />
@@ -19,11 +26,11 @@
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </div>
-  <div class="field">
-    <%= f.label :content %><br />
-    <%= f.text_field :content %>
-  </div>
+  
   <div class="actions">
-    <%= f.submit %>
+	<%= submit_tag("CLEAR", {:name => "reset", :id => "reset_button", :type => "reset" }) %>
+    <%= f.submit "SUBMIT" %>
   </div>
+
+  <p id="test" style="color:white;">test</p>
 <% end %>

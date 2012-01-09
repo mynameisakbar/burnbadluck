@@ -18,7 +18,7 @@ class SubmissionsController < ApplicationController
     @submission = Submission.find(params[:id])
 
     respond_to do |format|
-      format.html { redirect_to submissions_url }# show.html.erb
+      format.html # show.html.erb
       format.json { render json: @submission }
     end
   end
@@ -46,7 +46,7 @@ class SubmissionsController < ApplicationController
 
     respond_to do |format|
       if @submission.save
-        format.html { redirect_to @submission, notice: 'Submission was successfully created.' }
+        format.html { redirect_to submissions_url }
         format.json { render json: @submission, status: :created, location: @submission }
       else
         format.html { render action: "new" }
