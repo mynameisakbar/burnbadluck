@@ -92,7 +92,7 @@ dd {
   position: fixed;
   top: 100px;
   right: 150px;
-  background: #fff
+  color: white;
 }
 
 br { clear: both; }

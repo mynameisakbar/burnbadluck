@@ -26,7 +26,7 @@ $(function(){
 // this is for COUNTDOWN TIMER
 $(function(){
     $('#counter').countdown({
-        format: 'hh:mm',
+        format: 'dd:hh:mm',
         image: '../assets/countdown_images/digits.png',
         startTime: '24:00'
     });
