@@ -56,7 +56,7 @@ textarea {
   display: none;
 }
 
-#new-submission { 
+#new-submission-div { 
   border: solid red;
   background: white;
   /*background:url(/assets/main.png);
@@ -65,18 +65,17 @@ textarea {
   text-align: left;
   width:454px;
   height:100%;
-  padding: 15px;
+  padding:15px;
+}
+
+form {
+  display: none;
 }
 
 #submit-text {
 	position:relative;
     left:38px;
     bottom:80px;
-}
-
-form
-{
-    display: none;
 }
 
 dl { 

@@ -24,21 +24,17 @@ $(function(){
 });
 
 $(function(){
-    if ($("form:first").is(":hidden")) {
-        $('#submit-text').click(function() {
-            //alert("tengtong");
+    $('#toggle').click(function() {
+        if ($("form:first").is(":hidden")) {        
             $("form:first").slideDown("slow");
-            $("#new-submission").mouseleave(function(){
-                //alert("tengtong");
-                $("form:first").slideUp("slow");
-            });
-        });
-    } else {
-        $("#new-submission").mouseleave(function(){
-            //alert("tengtong");                    
-        });
-        //$("div").hide();
-    }
+        }  else {
+            $("form:first").slideUp("slow");
+        }
+    });
+});
+
+$(function(){
+    
 });
 
 // this is for COUNTDOWN TIMER
