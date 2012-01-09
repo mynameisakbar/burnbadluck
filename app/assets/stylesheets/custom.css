@@ -57,23 +57,26 @@ textarea {
 }
 
 #new-submission { 
-  /*border: solid red;*/
-  background:url(/assets/main.png);
-  background-repeat:no-repeat;
+  border: solid red;
+  background: white;
+  /*background:url(/assets/main.png);
+  background-repeat:no-repeat;*/
   margin:0 auto;
   text-align: left;
-  height:400px;
   width:454px;
-  position:relative;
-  bottom:50px;
-  left:42px;
-  padding:15px;
+  height:100%;
+  padding: 15px;
 }
 
-form{
+#submit-text {
 	position:relative;
-	bottom:80px;
-	left:8px;
+    left:38px;
+    bottom:80px;
+}
+
+form
+{
+    display: none;
 }
 
 dl { 
@@ -151,9 +154,3 @@ br { clear: both; }
 	bottom:23px;
 	left:570px;
 }
-
-#submit-text {
-	position:relative;
-	bottom:80px;
-}
-

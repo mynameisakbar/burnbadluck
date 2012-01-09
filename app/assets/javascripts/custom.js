@@ -23,6 +23,24 @@ $(function(){
     });
 });
 
+$(function(){
+    if ($("form:first").is(":hidden")) {
+        $('#submit-text').click(function() {
+            //alert("tengtong");
+            $("form:first").slideDown("slow");
+            $("#new-submission").mouseleave(function(){
+                //alert("tengtong");
+                $("form:first").slideUp("slow");
+            });
+        });
+    } else {
+        $("#new-submission").mouseleave(function(){
+            //alert("tengtong");                    
+        });
+        //$("div").hide();
+    }
+});
+
 // this is for COUNTDOWN TIMER
 $(function(){
     $('#counter').countdown({
