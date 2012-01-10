@@ -15,9 +15,9 @@
   	<%= email_field(:submission, :email, :class => "required") %>
   </div>
   
-  <!--div id="captchaimage">
-  	<img src="images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" />
-  </div-->
+  <div id="captcha"></div>
+  
+  <p id="cap">test</p>
   
   <div class="actions">
   	<%= submit_tag("CLEAR", {:name => "reset", :id => "reset_button", :type => "reset" }) %>

@@ -15,7 +15,40 @@
   <%= stylesheet_link_tag 'custom', :media => 'screen' %>  
   
   <%= javascript_include_tag "application" %>
+  <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
   <%= csrf_meta_tags %>
+  
+  <script type="text/javascript">
+  	var ip;
+  	
+  	$.getJSON("http://jsonip.appspot.com?callback=?",function(data){
+  		ip = data.ip;
+	});
+	
+	
+  	$(function(){  		
+  		Recaptcha.create("6LfmJMwSAAAAACHiWF9-GIBaVSP6uTqFyY9HoCFw", "captcha", 
+  		{
+  			theme: "clean",
+        	callback: Recaptcha.focus_response_field
+    	});
+    	
+    	$('#cap').click(function(e){ 
+    		$.ajax(
+    		{
+  				url: 'http://www.google.com/recaptcha/api/verify',
+  				data: 
+  				{
+  					privatekey : '6LfmJMwSAAAAAF-XT0qsR_vU1K_XxT4ufuSMWmAS',
+  					remoteip   : '75.101.145.87',
+  					challenge  : Recaptcha.get_challenge(),
+  					response   : Recaptcha.get_response()
+  				}
+  			});  		
+    	});
+    });
+    
+  </script>
 </head>
 <body>
 	<div id="fb-root"></div>
@@ -31,8 +64,8 @@ e.src = document.location.protocol +
 document.getElementById('fb-root').appendChild(e);
 }());
 </script>
-	<div class="container">
-	 <div id="logo"><%= image_tag("logo.png", :alt => "Sample App", :class => "round") %></div>
+	<div class="container">  
+  	 <div id="logo"><%= image_tag("logo.png", :alt => "Sample App", :class => "round") %></div>
 	 
 	 <div id="dragonR"></div>
 	 

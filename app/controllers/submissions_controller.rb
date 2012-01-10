@@ -49,6 +49,7 @@ class SubmissionsController < ApplicationController
 
     respond_to do |format|
       if @submission.save
+        
         format.html { redirect_to submissions_url }
         format.json { render json: @submission, status: :created, location: @submission }
       else
