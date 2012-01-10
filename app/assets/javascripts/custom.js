@@ -33,7 +33,7 @@ $(function(){
             inline:true, 
             href:"#thx-link", 
             width:"550px", 
-            height:"500px",
+            height:"300px",
             onOpen:function()
             {
                 $('#thx-link').css({"display":"block"}); 

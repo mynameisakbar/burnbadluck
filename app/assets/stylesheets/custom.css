@@ -28,6 +28,10 @@ textarea {
 /*h2 { margin: 0 }
 */
 
+.pad15 {
+  padding:15px;
+}
+
 .section {
   width: 500px;
   margin: 0 auto;   
@@ -53,7 +57,6 @@ textarea {
 
 #about {
   text-align: left;
-  padding: 15px;
   overflow: hidden;
 }
 
@@ -71,7 +74,6 @@ textarea {
   text-align: left;
   width:454px;
   height:100%;
-  padding:15px;
 }
 
 form {

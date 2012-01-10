@@ -1,21 +1,14 @@
 <div id="main">
-	<section id="thx-link">
-			<p>LOGO</p> 
-			<p>THANK YOU FOR SUBMITTING YOUR BAD LUCK</p>
+	<section id="thx-link" class="pad15">
+			<h2>THANK YOU</h2>
 
-			Here’s your message:
-			<p id="thx-content" ></p>
+			<p>Thank you for submitting your bad luck.</p>
 			<p>
-				Since your bad luck is full of more bad luck, 
-				it needs to be burnt on the right day. 
-				Thankfully that day is right around the corner. 
-				Check back on our website the midnight before the Lunar New Year 
-				to watch your bad luck burn!
+				Now that your bad luck is going to be burnt away, help
+				your friends burn their bad luck. Share.
 			</p>
-			<p> Click on the link below to view your bad luck </p>
-			<p><a href='submissions/'>CLICK HERE</a></p>
-
-			<p>Sincerely yours, Bad Luck Burning Team</p>
+			
+			<p><i>Bad Luck Burning Team</i></p>
 
 			<div id="soc-button">
 	        	<a href="https://twitter.com/share" class="twitter-share-button" 
@@ -23,12 +16,12 @@
 	        	data-hashtags="burnbadluck" data-url="http://burnbadluck.herokuapp.com/submissions/" 
 	        	data-lang="en">Tweet</a>
 	        </div>
-		</section>
+	</section>
 	<div id="about-link" class="normal-pop">
 		<!--h2><a id='test' href='http://localhost:3000/about'>ABOUT</a></h2>
 		<a id='test' href='/about'></a-->
 	</div>
-	<div id ="new-submission-div">
+	<div id="new-submission-div" class="pad15">
 		<img id="submit-text" src="/assets/submit-text.png"/>
 		<p id="toggle">CLICK TO SHOW/HIDE</p>
 		<%= render 'form' %>
