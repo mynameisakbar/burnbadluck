@@ -1,8 +1,8 @@
 <%= form_tag("/submissions", :method => "post", :id => "new_submission", :class => "new_submission") do %>
   <div class="field">
-  	<%= label_tag(:submission_content, "BAD LUCK MESSAGE*") %><br />
-  	<%= text_area(:submission, :content, :class => "required", :maxlength => "140") %>
-  	<%= label_tag(:submission_content, "* Y&R reserves the right to remove any inappropriate submissions") %>
+  	<%= label_tag(:submission_content, "BAD LUCK MESSAGE*") %>
+	<%= text_area(:submission, :content, :class => "required", :maxlength => "140") %>
+  	<!--%= label_tag(:submission_content, "*Y&R reserves the right to remove any inappropriate submissions") %-->
   </div>
   
   <div class="field">

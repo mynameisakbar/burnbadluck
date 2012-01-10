@@ -82,7 +82,7 @@ var _gaq = _gaq || [];
 $(function(){
     var id = $("#share_button_").attr("alt");
 
-    $('#share_button').click(function(e){
+    $('.share_button').click(function(e){
         e.preventDefault();
         FB.ui(
         {
