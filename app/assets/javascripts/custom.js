@@ -92,5 +92,18 @@ $(function(){
             message: ''
         });
     });
+    
+    $('#share_button_').click(function(e){
+        e.preventDefault();
+        FB.ui(
+        {
+            method: 'feed',
+            name: 'This is the content of the "name" field.',
+            link: ' http://burnbadluck.com/',
+            caption: 'This is the content of the "caption" field.',
+            description: 'This is the content of the "description" field, below the caption.',
+            message: ''
+        });
+    });
 });
         
