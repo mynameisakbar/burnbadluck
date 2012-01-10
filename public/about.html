@@ -14,26 +14,44 @@
 	<link href="/assets/blueprint/src/typography.css?body=1" media="screen" rel="stylesheet" type="text/css">
 	<link href="/assets/colorbox.css?body=1" media="screen" rel="stylesheet" type="text/css">
 	<link href="/assets/custom.css?body=1" media="screen" rel="stylesheet" type="text/css">
-	<link href="/assets/pages.css?body=1" media="screen" rel="stylesheet" type="text/css">
-	<link href="/assets/scaffolds.css?body=1" media="screen" rel="stylesheet" type="text/css">
-	<link href="/assets/submissions.css?body=1" media="screen" rel="stylesheet" type="text/css">
+  	
   	<!--[if lt IE 9]>
     	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   	<![endif]-->    
-    <link href="/assets/blueprint/screen.css?body=1" media="screen" rel="stylesheet" type="text/css">
+  
+  	<link href="/assets/blueprint/screen.css?body=1" media="screen" rel="stylesheet" type="text/css">
   	<link href="/assets/blueprint/print.css?body=1" media="print" rel="stylesheet" type="text/css">
   
   	<!--[if lt IE 8]><link href="/assets/blueprint/ie.css?body=1" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-  	<link href="/assets/custom.css?body=1" media="screen" rel="stylesheet" type="text/css"> 
+  	<link href="/assets/custom.css?body=1" media="screen" rel="stylesheet" type="text/css">
+  	
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  	<!--script>
+  		$(function(){
+    		$('#test').countdown({
+        		format: 'hh:mm',
+        		image: '../assets/countdown_images/digits.png',
+        		startTime: '24:00'
+    		});
+		});
+  	</script-->
   </head>
   <body>
-  	<section>
-    	<h1>ABOUT</h1>
+  	<section id="about">
+    	<h2>ABOUT</h2>
     	<p>Lunar New Year is coming. Bad Luck Burning Team wants to give
     	you a lucky start to the year of the Dragon. Simply submit your bad
     	luck messages and watch it burn on midnight before the Lunar New
     	Year. You will get rid of all the bad luck and start lucky
     	for the Lunar New Year.<p>
+    	
+    	<p>Bad Luck Burning Team</p>
+    	
+    	<div>
+    		COUNTDOWN TIMER
+			<div id="test"></div>
+			TO LUNAR NEW YEAR
+    	</div>
     </section>
   </body>
 </html>

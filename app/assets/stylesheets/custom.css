@@ -51,6 +51,12 @@ textarea {
   margin:0 auto;
 }
 
+#about {
+  text-align: left;
+  padding: 15px;
+  overflow: hidden;
+}
+
 #thx-link {
   text-align: left;
   display: none;
