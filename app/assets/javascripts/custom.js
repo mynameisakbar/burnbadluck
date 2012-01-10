@@ -16,6 +16,14 @@ $(function(){
         }
     });
     
+    $('#dragonL').click(function() {
+        if ($(".adm").is(":hidden")) {        
+            $(".adm").show();
+        }  else {
+            $(".adm").hide();
+        }
+    });
+    
     // this is for COUNTDOWN TIMER
     $('#counter').countdown({
         format: 'hh:mm',

@@ -1,4 +1,7 @@
 class SubmissionsController < ApplicationController
+  http_basic_authenticate_with :name => "admin", :password => "deleteAdm", :only => :destroy 
+  http_basic_authenticate_with :name => "admin", :password => "editAdm", :only => :edit
+    
   # GET /submissions
   # GET /submissions.json
   def index

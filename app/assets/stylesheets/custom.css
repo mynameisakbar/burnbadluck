@@ -86,6 +86,10 @@ form {
     bottom:80px;
 }
 
+.adm {
+    display: none;
+}
+
 dl { 
   border: solid red; 
   margin: 50px;

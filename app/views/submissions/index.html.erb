@@ -42,9 +42,9 @@
 	        	data-text="I'm burning my bad luck. Are you?" 
 	        	data-hashtags="burnbadluck" data-url="http://burnbadluck.com/submissions/<%= submission.id %>" 
 	        	data-lang="en">Tweet</a></dd>
-    		<!--td><%= link_to 'Show', submission %></td>
-    		<td><%= link_to 'Edit', edit_submission_path(submission) %></td-->
-    		<dd><%= link_to 'Destroy', submission, confirm: 'Are you sure?', method: :delete %></dd>
+    		<!--td><%= link_to 'Show', submission %></td-->
+    		<dd class='adm'><%= link_to 'Edit', edit_submission_path(submission)%></dd>
+    		<dd class='adm'><%= link_to 'Destroy', submission, confirm: 'Are you sure?', method: :delete %></dd>
   		</dl>
   		<% end %>
 	</div>

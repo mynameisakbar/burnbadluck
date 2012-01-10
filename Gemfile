@@ -7,6 +7,7 @@ gem 'rails', '3.1.0'
 
 gem 'thin'
 gem 'heroku'
+gem 'recaptcha', :require => 'recaptcha/rails'
 
 group :development, :test do
   gem 'sqlite3'
