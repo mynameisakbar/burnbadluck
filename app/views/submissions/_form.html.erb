@@ -1,36 +1,21 @@
 <%= form_for(@submission) do |f| %>
-  <% if @submission.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@submission.errors.count, "error") %> prohibited this submission from being saved:</h2>
+	<div class="field">
+		<%= f.label :content %>
+    	<%= f.text_area :content %>
+  	</div>  	
+  	* Y&R reserves the right to remove any inappropriate submissions
 
-      <ul>
-      <% @submission.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-	
-	
-  <div class="field">
-    <%= f.label :content %>
-    <%= f.text_area :content %>
-  </div>
-  * Y&R reserves the right to remove any inappropriate submissions
-
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-  </div>
+  	<div class="field">
+    	<%= f.label :name %>
+    	<%= f.text_field :name %>
+  	</div>
+  	<div class="field">
+    	<%= f.label :email %>
+    	<%= f.text_field :email %>
+  	</div>
   
-  <div class="actions">
-	<%= submit_tag("CLEAR", {:name => "reset", :id => "reset_button", :type => "reset" }) %>
-    <%= f.submit "SUBMIT" %>
-  </div>
-
-  <p id="test" style="color:white;">test</p>
+  	<div class="actions">
+		<%= submit_tag("CLEAR", {:name => "reset", :id => "reset_button", :type => "reset" }) %>
+    	<%= f.submit "SUBMIT" %>
+  	</div>
 <% end %>
