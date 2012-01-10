@@ -147,7 +147,7 @@ br { clear: both; }
 	
 }
 
-#share_button {
+.share_button {
     position:relative;
     left:490px;
 }
