@@ -1,22 +1,46 @@
-body { background: #000;
-	margin:0;
+body { 
+	margin:0 auto;
 	overflow-x:hidden;
+	background:url(/assets/bg.jpg);
+	background-repeat:repeat;
+	
 }
 
-header { background: #fff; }
+html, body{
+	height:100%;
+	width:100%;
+}
 
 .container {
 	background:url(/assets/bg.jpg);
 	background-repeat:no-repeat;
-	width:100%;
+	width:1000px;
 	height:100%;
+	min-height:100%;
 	margin:0 auto;
+	padding-bottom:652px;
+}
+
+footer{
+	position: relative;
+	bottom: 460px;
+}
+
+#fb-root{
+	width:500px;
+}
+
+@font-face{
+	font-family: bebas;
+	src: url(BEBAS___.TTF);
 }
 
 textarea {
-	width:350px;
+	width:280px;
 	height:100px;
 	padding 5px;
+	resize:none;
+	background:transparent;
 }
 
 #logo {
@@ -43,7 +67,7 @@ textarea {
   width:500px;
   text-align:center;
   position:relative; 
-  bottom:46px;
+  top:-400px;
 }
 
 #about-link { 
@@ -66,24 +90,59 @@ textarea {
 }
 
 #new-submission-div { 
-  border: solid red;
-  background: white;
-  /*background:url(/assets/main.png);
-  background-repeat:no-repeat;*/
+  /*border: solid red;
+  background: white;*/
+  background:url(/assets/main.png);
+  background-repeat:no-repeat;
   margin:0 auto;
-  text-align: left;
-  width:454px;
-  height:100%;
+  text-align:left;
+  width:320px;
+  position:relative;
+  bottom:20px;
+  font-family:bebas;
+}
+
+#toggle{
+	text-align:center;
+}
+
+.actions{
+	margin-left:30%;
+}
+
+#submission_name, #submission_email{
+	background: transparent;
+	position: relative;
+	bottom: 4px;
+	width: 250px;
+	margin-left: 8px;
+	font-family:helvetica;
+}
+
+#border{
+	border-color: black;
+	border-style: solid;
+	border:1px;
 }
 
 form {
   display: none;
+  margin:0 auto;
+  padding-left:15px;
 }
 
-#submit-text {
+#submit-text1 {
+	padding-top:5px;
+	font-size:24px;
+	text-align:center;
+}
+
+#submit-text2 {
+	padding-top:5px;
+	font-size:14px;
 	position:relative;
-    left:38px;
-    bottom:80px;
+	bottom:14px;
+	text-align:center;
 }
 
 .adm {
@@ -91,15 +150,23 @@ form {
 }
 
 dl { 
-  border: solid red; 
-  margin: 50px;
+  /*border: solid red; */
+  background:url(/assets/mainM.png);
+  background-repeat:no-repeat;
+  width:280px;
+  margin: 0 auto;
   text-align: left;
   padding: 15px;
   color:white;
+  padding-top:50px;
+  font-size:14px;
 }
 
 dd {
   margin: 0;
+  color:black;
+	font-size:12px;
+	font-family:helvetica;
 }
 
 #timer {
@@ -107,6 +174,12 @@ dd {
   top: 100px;
   right: 150px;
   color: white;
+}
+
+#list-submission{
+	position:relative;
+	bottom:19px;
+	font-family:helvetica;
 }
 
 br { clear: both; }
@@ -133,11 +206,9 @@ br { clear: both; }
 	background:url(/assets/dragon-L.png);
 	background-repeat:no-repeat;
 	position:relative;
-	height:400px;
+	height:300px;	
 	width:340px;
-	float:left;
-	right:280px;
-	top:200px;
+	top:100px;
 }
 
 #dragonL{
@@ -147,7 +218,7 @@ br { clear: both; }
 	height:400px;
 	width:340px;
 	float:right;
-	top:200px;
+	bottom:200px;
 	
 }
 

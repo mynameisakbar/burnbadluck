@@ -24,9 +24,9 @@
   	$(function(){
   		//var challenge = Recaptcha.get_challenge();
   		//var response = Recaptcha.get_response();
-  		$.getJSON("http://jsonip.appspot.com?callback=?",function(data){
+  		/*$.getJSON("http://jsonip.appspot.com?callback=?",function(data){
   			ip = data.ip;
-		});
+		});*/
   		
   		Recaptcha.create("6LfmJMwSAAAAACHiWF9-GIBaVSP6uTqFyY9HoCFw", "captcha", 
   		{
@@ -69,21 +69,23 @@ document.getElementById('fb-root').appendChild(e);
 </script>
 	<div class="container">  
   	 <div id="logo"><%= image_tag("logo.png", :alt => "Sample App", :class => "round") %></div>
+		
+	 <%= image_tag("share_button.png", :alt => "Share FB", :class => "round share_button") %>
+	 <div id="twitter">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-text="Burn your bad luck with us NAO!" data-hashtags="burnbadluck" data-url="http://www.burnbadluck.com" data-lang="en">Tweet</a>
+	 </div>
 	 
-	 <div id="dragonR"></div>
-	 
+	 <div id="dragonR"></div>	 
 	 <div id="dragonL"></div>
 	 
 	 <!--div class="fb-like" data-href="http://www.facebook.com/heydiaspora" data-send="false" data-layout="button_count" 	data-width="30" data-show-faces="false"></div-->
-	 <%= image_tag("share_button.png", :alt => "Share FB", :class => "round share_button") %>
-	 
-	 <div id="twitter">
-		<a href="https://twitter.com/share" class="twitter-share-button" data-text="Burn your bad luck with us NAO!" data-hashtags="burnbadluck" data-url="http://www.burnbadluck.com" data-lang="en">Tweet</a>
-	 </div>	 
 	 
 	 <div id="section">
 	 	<%= yield %>
 	 </div>
+	<footer>
+		<%= image_tag("footer.png", :alt => "Footer") %>	
+	</footer>
     </div>
 </body>
 </html>
