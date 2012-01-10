@@ -18,6 +18,12 @@ html, body{
 	height:100%;
 	min-height:100%;
 	margin:0 auto;
+	padding-bottom:652px;
+}
+
+footer{
+	position: relative;
+	bottom: 460px;
 }
 
 #fb-root{
@@ -142,15 +148,23 @@ form {
 }
 
 dl { 
-  border: solid red; 
-  margin: 50px;
+  /*border: solid red; */
+  background:url(/assets/mainM.png);
+  background-repeat:no-repeat;
+  width:280px;
+  margin: 0 auto;
   text-align: left;
   padding: 15px;
   color:white;
+  padding-top:50px;
+  font-size:14px;
 }
 
 dd {
   margin: 0;
+  color:black;
+	font-size:12px;
+	font-family:helvetica;
 }
 
 #timer {
@@ -158,6 +172,12 @@ dd {
   top: 100px;
   right: 150px;
   color: white;
+}
+
+#list-submission{
+	position:relative;
+	bottom:19px;
+	font-family:helvetica;
 }
 
 br { clear: both; }
