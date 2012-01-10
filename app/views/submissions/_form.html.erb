@@ -1,21 +1,22 @@
-<%= form_for(@submission) do |f| %>
-	<div class="field">
-		<%= f.label :content %>
-    	<%= f.text_area :content %>
-  	</div>  	
-  	* Y&R reserves the right to remove any inappropriate submissions
-
-  	<div class="field">
-    	<%= f.label :name %>
-    	<%= f.text_field :name %>
-  	</div>
-  	<div class="field">
-    	<%= f.label :email %>
-    	<%= f.text_field :email %>
-  	</div>
+<%= form_tag("/submissions", :method => "post", :id => "new_submission", :class => "new_submission") do %>
+  <div class="field">
+  	<%= label_tag(:submission_content, "BAD LUCK MESSAGE*") %><br />
+  	<%= text_area(:submission, :content, :class => "required", :maxlength => "140") %>
+  	<%= label_tag(:submission_content, "* Y&R reserves the right to remove any inappropriate submissions") %>
+  </div>
   
-  	<div class="actions">
-		<%= submit_tag("CLEAR", {:name => "reset", :id => "reset_button", :type => "reset" }) %>
-    	<%= f.submit "SUBMIT" %>
-  	</div>
+  <div class="field">
+  	<%= label_tag(:submission_name, "NAME") %>
+  	<%= text_field(:submission, :name, :class => "required") %>
+  </div>
+  
+  <div class="field">
+  	<%= label_tag(:submission_email, "EMAIL") %>
+  	<%= email_field(:submission, :email, :class => "required") %>
+  </div>
+  
+  <div class="actions">
+  	<%= submit_tag("CLEAR", {:name => "reset", :id => "reset_button", :type => "reset" }) %>
+  	<%= submit_tag("SUBMIT") %>
+  </div>
 <% end %>
