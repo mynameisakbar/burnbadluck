@@ -107,7 +107,7 @@ $(function(){
             picture: 'http://www.hyperarts.com/external-xfbml/share-image.gif',
             caption: 'This is the content of the "caption" field.',
             description: 'This is the content of the "description" field, below the caption.',
-            message: "Burn baby burn! www.burnbadluck.com/submissions/" + id;
+            message: "Burn baby burn! www.burnbadluck.com/submissions/"
         });
     });
 });
