@@ -16,42 +16,29 @@
   
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  
-  <script type="text/javascript">
- 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-28207206-1']);
-  _gaq.push(['_trackPageview']);
- 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
- 
-  </script>
 </head>
 <body>
 	<div id="fb-root"></div>
-	<!--script src="http://connect.facebook.net/en_US/all.js"></script>
-	<script>
-    FB.init({ 
-        appId:'342304519131396', cookie:true, 
-        status:true, xfbml:true, oauth:true
-    });
-	</script-->
-	
 	<div class="container">
 	 <div id="logo"><%= image_tag("logo.png", :alt => "Sample App", :class => "round") %></div>
+	 
 	 <div id="dragonR"></div>
+	 
 	 <div id="dragonL"></div>
+	 
 	 <div class="fb-like" data-href="http://www.facebook.com/heydiaspora" data-send="false" data-layout="button_count" 	data-width="30" data-show-faces="false"></div>
-	<div class="twitter">
-	<a href="https://twitter.com/share" class="twitter-share-button" data-text="Burn your bad luck with us NAO!" data-hashtags="burnbadluck" data-url="http://www.burnbadluck.com" data-lang="en">Tweet</a>
-	</div>
-	<div id="section">
+	
+	 <div class="twitter">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-text="Burn your bad luck with us NAO!" data-hashtags="burnbadluck" data-url="http://www.burnbadluck.com" data-lang="en">Tweet</a>
+	 </div>
+	 
+	 <div id="share_button">
+	 	TEST
+	 </div>
+	
+	 <div id="section">
 	 	<%= yield %>
-	</div>
+	 </div>
     </div>
 </body>
 </html>
