@@ -11,7 +11,7 @@
 			<p><i>Bad Luck Burning Team</i></p>
 
 			<div id="soc-button">
-				<%= image_tag("share_button.png", :alt => "Share FB", :id => "share_button_", :class => "round") %>
+				<%= image_tag("share_button.png", :alt => "Share FB", :id => "share_button", :class => "round") %>
 			
 	        	<a href="https://twitter.com/share" class="twitter-share-button" 
 	        	data-text="I'm burning my bad luck. Are you?" 
@@ -37,6 +37,11 @@
 			<dt><%= submission.name %></dt>
   			<dd><%= submission.email %></dd>
     		<dd><%= submission.content %></dd>
+    		<dd><%= image_tag("share_button.png", :alt => submission.id, :id => "share_button_", :class => "round") %></dd>
+    		<dd><a href="https://twitter.com/share" class="twitter-share-button" 
+	        	data-text="I'm burning my bad luck. Are you?" 
+	        	data-hashtags="burnbadluck" data-url="http://burnbadluck.herokuapp.com/submissions/<%= submission.id %>" 
+	        	data-lang="en">Tweet</a></dd>
     		<!--td><%= link_to 'Show', submission %></td>
     		<td><%= link_to 'Edit', edit_submission_path(submission) %></td-->
     		<dd><%= link_to 'Destroy', submission, confirm: 'Are you sure?', method: :delete %></dd>

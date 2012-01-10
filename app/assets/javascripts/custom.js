@@ -80,29 +80,34 @@ var _gaq = _gaq || [];
 
 // this is for FB SHARE
 $(function(){
+    var id = $("#share_button_").attr("alt");
+
     $('#share_button').click(function(e){
         e.preventDefault();
         FB.ui(
         {
             method: 'feed',
-            name: 'This is the content of the "name" field.',
+            name: 'Burn Your Bad Luck NAO!',
             link: ' http://burnbadluck.com/',
+            picture: 'http://www.hyperarts.com/external-xfbml/share-image.gif',
             caption: 'This is the content of the "caption" field.',
             description: 'This is the content of the "description" field, below the caption.',
-            message: ''
+            message: 'Burn your bad luck with us NAO! #burnbadluck'
         });
     });
     
     $('#share_button_').click(function(e){
+        alert(id);
         e.preventDefault();
         FB.ui(
         {
             method: 'feed',
-            name: 'This is the content of the "name" field.',
+            name: 'Burn Your Bad Luck NAO!',
             link: ' http://burnbadluck.com/',
+            picture: 'http://www.hyperarts.com/external-xfbml/share-image.gif',
             caption: 'This is the content of the "caption" field.',
             description: 'This is the content of the "description" field, below the caption.',
-            message: ''
+            message: "Burn baby burn! www.burnbadluck.com/submissions/" + id;
         });
     });
 });
