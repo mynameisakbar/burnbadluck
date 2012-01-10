@@ -42,13 +42,17 @@ class SubmissionsController < ApplicationController
   # POST /submissions
   # POST /submissions.json
   def create
-      @submission = Submission.new(params[:submission])
-      
+    @submission = Submission.new(params[:submission])
+
+    respond_to do |format|
       if @submission.save
-          # Handle a successful save.
-          redirect_to @user
+        format.html { redirect_to submissions_url }
+        format.json { render json: @submission, status: :created, location: @submission }
       else
+        format.html { render action: "new" }
+        format.json { render json: @submission.errors, status: :unprocessable_entity }
       end
+    end
   end
 
   # PUT /submissions/1

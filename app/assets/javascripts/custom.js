@@ -1,13 +1,34 @@
-// this is for COLORBOX
 $(function(){
+    // this is for COLORBOX
     $('.normal-pop').colorbox(
-        {
-            height: "315px",
-            width: "500px",
-            href: "/about"
-        });
+    {
+        height: "315px",
+        width: "500px",
+        href: "/about"
+    });
     
-    $('#test').colorbox(
+    // this is for SLIDE CLICK
+    $('#toggle').click(function() {
+        if ($("form:first").is(":hidden")) {        
+            $("form:first").slideDown("slow");
+        }  else {
+            $("form:first").slideUp("slow");
+        }
+    });
+    
+    // this is for COUNTDOWN TIMER
+    $('#counter').countdown({
+        format: 'hh:mm',
+        image: '../assets/countdown_images/digits.png',
+        startTime: '24:00'
+    });
+    
+    // this is for submit colorbox
+    $('input:last').click(function() {
+        //alert("test");
+        event.preventDefault();
+        
+        $.colorbox(
         {
             inline:true, 
             href:"#thx-link", 
@@ -20,30 +41,9 @@ $(function(){
             onClosed:function()
             {
                 $('#thx-link').css({"display":"none"});
+                $("form").submit();
             }
-    });
-});
-
-$(function(){
-    $('#toggle').click(function() {
-        if ($("form:first").is(":hidden")) {        
-            $("form:first").slideDown("slow");
-        }  else {
-            $("form:first").slideUp("slow");
-        }
-    });
-});
-
-$(function(){
-    
-});
-
-// this is for COUNTDOWN TIMER
-$(function(){
-    $('#counter').countdown({
-        format: 'dd:hh:mm',
-        image: '../assets/countdown_images/digits.png',
-        startTime: '24:00'
+        });
     });
 });
 
