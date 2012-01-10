@@ -19,14 +19,15 @@
   <%= csrf_meta_tags %>
   
   <script type="text/javascript">
-  	var ip;
-  	
-  	$.getJSON("http://jsonip.appspot.com?callback=?",function(data){
-  		ip = data.ip;
-	});
+  	var ip;	
 	
-	
-  	$(function(){  		
+  	$(function(){
+  		//var challenge = Recaptcha.get_challenge();
+  		//var response = Recaptcha.get_response();
+  		$.getJSON("http://jsonip.appspot.com?callback=?",function(data){
+  			ip = data.ip;
+		});
+  		
   		Recaptcha.create("6LfmJMwSAAAAACHiWF9-GIBaVSP6uTqFyY9HoCFw", "captcha", 
   		{
   			theme: "clean",
@@ -36,15 +37,17 @@
     	$('#cap').click(function(e){ 
     		$.ajax(
     		{
+    			type: "POST",
   				url: 'http://www.google.com/recaptcha/api/verify',
-  				data: 
+  				data:
   				{
-  					privatekey : '6LfmJMwSAAAAAF-XT0qsR_vU1K_XxT4ufuSMWmAS',
-  					remoteip   : '75.101.145.87',
-  					challenge  : Recaptcha.get_challenge(),
-  					response   : Recaptcha.get_response()
-  				}
-  			});  		
+  					privatekey:'6LfmJMwSAAAAAF-XT0qsR_vU1K_XxT4ufuSMWmAS',
+  					remoteip:ip,
+  					challenge:Recaptcha.get_challenge(),
+  					response:Recaptcha.get_response()
+  				},
+  				dataType: "jsonp"
+		    });		
     	});
     });
     
