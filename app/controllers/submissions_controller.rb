@@ -49,11 +49,11 @@ class SubmissionsController < ApplicationController
 
     respond_to do |format|
       if verify_recaptcha() && @submission.save        
-          format.html { redirect_to submissions_url, notice: 'TEST' }
+          format.html { redirect_to submissions_url, notice: @submission.content }
           format.json { render json: @submission, status: :created, location: @submission }
-          Notifier.signup_email(@submission).deliver
+          #Notifier.signup_email(@submission).deliver
       else
-        format.html { redirect_to submissions_url, notice: 'LALA' }
+        format.html { redirect_to submissions_url, notice: 'ERROR' }
       end
     end
   end

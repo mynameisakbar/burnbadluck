@@ -16,6 +16,8 @@ $(function(){
         }
     });
     
+    
+    
     /* this is for COUNTDOWN TIMER
     $('#counter').countdown({
         format: 'hh:mm',
@@ -26,8 +28,36 @@ $(function(){
     // this is for validation 
     //$("#new_submission").validate();
         
-    // this is for THANKYOU colorbox
-    $('#submit_button').click(function(event) {
+    // this is for CAPTCHA colorbox
+    var content = $("#submission_content").val();
+    var resp = $("#notice").text();
+    if (resp == "ERROR") {
+        alert("You have not entered your CAPTCHA, please do so to proceed");
+    }
+    
+    $("form").validate();
+        
+    if (resp.length != 0) {
+        alert(resp.length);
+        $.colorbox(
+        {
+            inline:true, 
+            href:"#thx-link", 
+            width:"550px", 
+            height:"300px",
+            onOpen:function()
+            {
+                $('#thx-content').text(resp);
+                $('#thx-link').css({"display":"block"}); 
+            },
+            onClosed:function()
+            {
+                $('#thx-link').css({"display":"none"});
+            }
+        });
+    } 
+    
+    /*$('#submit_button').click(function(event) {
         //alert($("form").valid());
         //alert($("#submission_content").val());
         var content = $("#submission_content").val();
@@ -37,25 +67,8 @@ $(function(){
             //alert($("form").valid());
             return false;
         }  else {
-            $.colorbox(
-            {
-                inline:true, 
-                href:"#thx-link", 
-                width:"550px", 
-                height:"300px",
-                onOpen:function()
-                {
-                    $('#thx-content').text(content);
-                    $('#thx-link').css({"display":"block"}); 
-                },
-                onClosed:function()
-                {
-                    $('#thx-link').css({"display":"none"});
-                    $("form").submit();
-                }
-            });
         }
-    });
+    });*/
 });
 
 
