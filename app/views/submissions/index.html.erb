@@ -35,14 +35,12 @@
 		<% @submissions.reverse_each do |submission| %>
   		<dl>
 			<dt><%= submission.name %></dt>
-  			<dd><%= submission.email %></dd>
-    		<dd><%= submission.content %></dd>
+  			<dd><%= submission.content %></dd>
     		<dd><%= image_tag("share_button.png", :alt => submission.id, :id => "share_button_", :class => "round") %></dd>
     		<dd><a href="https://twitter.com/share" class="twitter-share-button" 
 	        	data-text="I'm burning my bad luck. Are you?" 
 	        	data-hashtags="burnbadluck" data-url="http://burnbadluck.com/submissions/<%= submission.id %>" 
 	        	data-lang="en">Tweet</a></dd>
-    		<!--td><%= link_to 'Show', submission %></td-->
     		<dd class='adm'><%= link_to 'Edit', edit_submission_path(submission)%></dd>
     		<dd class='adm'><%= link_to 'Destroy', submission, confirm: 'Are you sure?', method: :delete %></dd>
   		</dl>
