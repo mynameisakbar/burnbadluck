@@ -23,7 +23,7 @@ html, body{
 
 footer{
 	position: relative;
-	bottom: 460px;
+    bottom: 350px;
 }
 
 #fb-root{
@@ -47,7 +47,10 @@ textarea {
     float:left;
 }
 
-#soc-button { text-align: right; }
+#soc-button-head {
+    float:right;
+    position:relative;
+}
 
 /*h2 { margin: 0 }
 */
@@ -67,7 +70,7 @@ textarea {
   width:500px;
   text-align:center;
   position:relative; 
-  top:-400px;
+  top:-300px;
 }
 
 #about-link { 
@@ -208,7 +211,7 @@ br { clear: both; }
 	position:relative;
 	height:300px;	
 	width:340px;
-	top:100px;
+	top:200px;
 }
 
 #dragonL{
@@ -218,13 +221,11 @@ br { clear: both; }
 	height:400px;
 	width:340px;
 	float:right;
-	bottom:200px;
-	
+	bottom:100px;	
 }
 
-.share_button {
-    position:relative;
-    left:490px;
+#share_button_head {
+    position: relative;
 }
 
 /*.twitter-share-button{
@@ -234,6 +235,4 @@ br { clear: both; }
 
 #twitter{
 	position:relative;
-	bottom:23px;
-	left:570px;
 }
