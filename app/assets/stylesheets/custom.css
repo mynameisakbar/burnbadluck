@@ -52,6 +52,8 @@ textarea {
     position:relative;
 }
 
+#soc-button { text-align: right; }
+
 /*h2 { margin: 0 }
 */
 
@@ -90,6 +92,10 @@ textarea {
 #thx-link {
   text-align: left;
   display: none;
+}
+
+#thx-content {
+  font-weight: bold;
 }
 
 #new-submission-div { 

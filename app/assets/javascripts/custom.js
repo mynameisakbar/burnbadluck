@@ -37,6 +37,8 @@ $(function(){
     // this is for THANKYOU colorbox
     $('#submit_button').click(function(event) {
         //alert($("form").valid());
+        //alert($("#submission_content").val());
+        var content = $("#submission_content").val();
         event.preventDefault();
         
         if ($("form").valid() == false) {
@@ -51,6 +53,7 @@ $(function(){
                 height:"300px",
                 onOpen:function()
                 {
+                    $('#thx-content').text(content);
                     $('#thx-link').css({"display":"block"}); 
                 },
                 onClosed:function()
