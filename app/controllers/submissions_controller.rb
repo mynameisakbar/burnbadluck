@@ -48,8 +48,7 @@ class SubmissionsController < ApplicationController
     @submission = Submission.new(params[:submission])
 
     respond_to do |format|
-      if @submission.save
-        
+      if verify_recaptcha && @submission.save        
         format.html { redirect_to submissions_url }
         format.json { render json: @submission, status: :created, location: @submission }
       else

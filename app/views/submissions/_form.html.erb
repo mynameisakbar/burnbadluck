@@ -14,10 +14,13 @@
   	<%= label_tag(:submission_email, "EMAIL") %>
   	<%= email_field(:submission, :email, :class => "required") %>
   </div>
-  
-  <div id="captcha"></div>
-  
-  <p id="cap">test</p>
+  <div id="recaptcha_widget">
+    <div id="recaptcha_image"></div>
+    <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />
+    <div><a href="javascript:Recaptcha.reload()">RELOAD</a></div>
+  </div>
+
+  <%= recaptcha_tags :display => {:theme => 'custom', :custom_theme_widget => 'recaptcha_widget'} %>
   
   <div class="actions">
   	<%= submit_tag("CLEAR", {:name => "reset", :id => "reset_button", :type => "reset" }) %>
