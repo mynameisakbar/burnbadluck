@@ -16,14 +16,6 @@ $(function(){
         }
     });
     
-    $('#dragonL').click(function() {
-        if ($(".adm").is(":hidden")) {        
-            $(".adm").show();
-        }  else {
-            $(".adm").hide();
-        }
-    });
-    
     /* this is for COUNTDOWN TIMER
     $('#counter').countdown({
         format: 'hh:mm',
@@ -82,8 +74,6 @@ $(function(){
 
 // this is for FB SHARE
 $(function(){
-    var id = $("#share_button_").attr("alt");
-
     $('.share_button').click(function(e){
         e.preventDefault();
         FB.ui(
@@ -98,8 +88,8 @@ $(function(){
         });
     });
     
-    $('#share_button_').click(function(e){
-        alert(id);
+    $('.share_button_').click(function(e){
+        var id = $(this).attr("alt");
         e.preventDefault();
         FB.ui(
         {
@@ -109,7 +99,7 @@ $(function(){
             picture: 'http://www.hyperarts.com/external-xfbml/share-image.gif',
             caption: 'This is the content of the "caption" field.',
             description: 'This is the content of the "description" field, below the caption.',
-            message: "Burn baby burn! www.burnbadluck.com/submissions/"
+            message: "Burn baby burn! www.burnbadluck.com/submissions/" + id
         });
     });
 });

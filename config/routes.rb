@@ -1,6 +1,7 @@
 Burnbadluck::Application.routes.draw do
   resources :submissions
- 
+  
+  match "admin" => "submissions#index"
   #root :to => "submissions#index"
 
   # The priority is based upon order of creation:
