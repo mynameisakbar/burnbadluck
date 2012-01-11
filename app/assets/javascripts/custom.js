@@ -37,7 +37,7 @@ $(function(){
     
     $("form").validate();
         
-    if (resp.length != 0 || resp == "ERROR") {
+    if (resp.length != 0 || resp != "ERROR") {
         alert(resp.length);
         $.colorbox(
         {
