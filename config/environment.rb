@@ -6,7 +6,7 @@ Burnbadluck::Application.initialize!
 
 ActionMailer::Base.smtp_settings = {
     :user_name => "app2379554@heroku.com",
-    :password => "Revolutionary09",
+    :password => "g5fpcxgh",
     :domain => "burnbadluck.com",
     :address => "smtp.sendgrid.net",
     :port => 587,
