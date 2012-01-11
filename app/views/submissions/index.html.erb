@@ -15,9 +15,8 @@
 			<p><i>Bad Luck Burning Team</i></p>
 
 			<div id="soc-button">
-				<%= image_tag("share_button.png", :alt => "Share FB", :class => "round share_button") %>
-			
-	        	<a href="https://twitter.com/share" class="twitter-share-button" 
+				<%= image_tag("fbs.png", :alt => "Share FB", :class => "round share_button") %>
+				<a href="https://twitter.com/share" class="twitter-share-button-top" 
 	        	data-text="I'm burning my bad luck. Are you?" 
 	        	data-hashtags="burnbadluck" data-url="http://burnbadluck.com/" 
 	        	data-lang="en">Tweet</a>
@@ -28,26 +27,26 @@
 		<a id='test' href='/about'></a-->
 	</div>
 	<div id="new-submission-div" class="pad15">
-		<!--img id="submit-text" src="/assets/submit-text.png"/-->
-		<div id="submit-text1">SUBMIT YOUR BAD LUCK</div>
-		<div id="submit-text2">START LUCKY FOR THE LUNAR NEW YEAR</div>
+		<img id="submit-text" src="/assets/submit-text.png">
+		<!--div id="submit-text1">SUBMIT YOUR BAD LUCK</div>
+		<div id="submit-text2">START LUCKY FOR THE LUNAR NEW YEAR</div-->
 		<div id="toggle">CLICK HERE</div>
 		<%= render 'form' %>
 	</div>
 
 	<div id ="list-submission">
 		<% @submissions.reverse_each do |submission| %>
-  		<dl>
-			<dt><%= submission.name %></dt>
-  			<dd><%= submission.content %></dd>
-    		<dd><%= image_tag("share_button.png", :alt => submission.id, :id => "share_button_", :class => "round") %></dd>
-    		<dd><a href="https://twitter.com/share" class="twitter-share-button" 
+  		<div class="dl">
+			<b><%= submission.name %></b><br/>
+  			<div class="dd"><%= submission.content %></div>
+    			<%= image_tag("fbs.png", :alt => submission.id, :id => "share_button_", :class => "round") %>
+    			<a href="https://twitter.com/share" class="twitter-share-button" 
 	        	data-text="I'm burning my bad luck. Are you?" 
 	        	data-hashtags="burnbadluck" data-url="http://burnbadluck.com/submissions/<%= submission.id %>" 
-	        	data-lang="en">Tweet</a></dd>
+	        	data-lang="en">Tweet</a>
     		<dd class='adm'><%= link_to 'Edit', edit_submission_path(submission)%></dd>
     		<dd class='adm'><%= link_to 'Destroy', submission, confirm: 'Are you sure?', method: :delete %></dd>
-  		</dl>
+  		</div>
   		<% end %>
 	</div>
 	<br /><br/>

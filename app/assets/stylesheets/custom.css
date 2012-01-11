@@ -23,7 +23,8 @@ html, body{
 
 footer{
 	position: relative;
-    bottom: 350px;
+    	bottom: 0px;
+
 }
 
 #fb-root{
@@ -52,7 +53,7 @@ textarea {
     position:relative;
 }
 
-#soc-button { text-align: right; }
+#soc-button {}
 
 /*h2 { margin: 0 }
 */
@@ -65,6 +66,12 @@ textarea {
   width: 500px;
   margin: 0 auto;   
   text-align: center;
+}
+
+#section{
+  width: 310px;
+  margin: 0 auto;   
+  text-align: center;	
 }
 
 #main {
@@ -102,7 +109,7 @@ textarea {
   /*border: solid red;
   background: white;*/
   background:url(/assets/main.png);
-  background-repeat:no-repeat;
+  background-repeat:repeat-y;
   margin:0 auto;
   text-align:left;
   width:320px;
@@ -120,6 +127,13 @@ div.field, div.actions {
     margin-bottom: 4px;
 }
 
+.actions input{
+	background: transparent;
+	font-family: bebas;
+	font-size: 16px;
+	color: #E7E7E7
+}
+
 .actions{
 	margin-left:30%;
 }
@@ -131,6 +145,7 @@ div.field, div.actions {
 	width: 250px;
 	margin-left: 8px;
 	font-family:helvetica;
+	margin-bottom: 12px;
 }
 
 #border{
@@ -147,13 +162,19 @@ form {
 
 #recaptcha_widget {
     position: relative;
-    bottom: 10px;
 }
 
-#submit-text1 {
-	padding-top:5px;
-	font-size:24px;
-	text-align:center;
+#recaptcha_widget label{
+    position:relative;
+    top:1px;
+}
+
+#recaptcha_response_field {
+	width: 195px;
+}
+
+#submit-text {
+	margin-left:45px;
 }
 
 #submit-text2 {
@@ -168,7 +189,7 @@ form {
     display: none;
 }
 
-dl { 
+.dl { 
   /*border: solid red; */
   background:url(/assets/mainM.png);
   background-repeat:no-repeat;
@@ -179,13 +200,14 @@ dl {
   color:white;
   padding-top:50px;
   font-size:14px;
+font-family:arial;
 }
 
-dd {
+.dd {
   margin: 0;
   color:black;
 	font-size:12px;
-	font-family:helvetica;
+	font-family:arial;
 }
 
 #timer {
@@ -197,7 +219,7 @@ dd {
 
 #list-submission{
 	position:relative;
-	bottom:19px;
+	bottom:20px;
 	font-family:helvetica;
 }
 
@@ -244,11 +266,47 @@ br { clear: both; }
     position: relative;
 }
 
-/*.twitter-share-button{
+#share_button_{
 	position:relative;
-	left:470px;
-}*/
+	left:175px;
+	top:3px;
+}
+
+
+.twitter-share-button{
+	position:relative;
+	left:177px;
+	top:3px;
+}
+
+iframe{
+	position:relative;
+	right:-600px;
+}
 
 #twitter{
 	position:relative;
+}
+
+input, textarea {
+    outline:none;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border:1px solid rgba(0,0,0, 0.2);
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 255, 1);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, 1); 
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 255, 1);
+    border:1px solid rgba(0,0,255, 0.8); 
+}
+
+label.error{
+	margin-left:80px;
+	
 }
