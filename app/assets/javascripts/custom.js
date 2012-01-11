@@ -24,23 +24,23 @@ $(function(){
         }
     });
     
-    // this is for COUNTDOWN TIMER
+    /* this is for COUNTDOWN TIMER
     $('#counter').countdown({
         format: 'hh:mm',
         image: '../assets/countdown_images/digits.png',
         startTime: '24:00'
-    });
+    });*/
     
     // this is for validation 
     //$("#new_submission").validate();
         
     // this is for THANKYOU colorbox
-    $('input:last').click(function() {
-        //alert("test");
+    $('#submit_button').click(function(event) {
+        //alert($("form").valid());
         event.preventDefault();
         
-        if ($("form").valid() == false) {        
-            //alert("ngekngok");
+        if ($("form").valid() == false) {
+            //alert($("form").valid());
             return false;
         }  else {
             $.colorbox(
@@ -60,6 +60,30 @@ $(function(){
                 }
             });
         }
+        
+        
+        /*if ($("form").valid() == false) {        
+            alert("ngekngok");
+            $("#new_submission").validate();
+            return false;
+        }  else {
+            $.colorbox(
+            {
+                inline:true, 
+                href:"#thx-link", 
+                width:"550px", 
+                height:"300px",
+                onOpen:function()
+                {
+                    $('#thx-link').css({"display":"block"}); 
+                },
+                onClosed:function()
+                {
+                    $('#thx-link').css({"display":"none"});
+                    $("form").submit();
+                }
+            });
+        }*/
     });
 });
 
