@@ -63,32 +63,10 @@ $(function(){
                 }
             });
         }
-        
-        
-        /*if ($("form").valid() == false) {        
-            alert("ngekngok");
-            $("#new_submission").validate();
-            return false;
-        }  else {
-            $.colorbox(
-            {
-                inline:true, 
-                href:"#thx-link", 
-                width:"550px", 
-                height:"300px",
-                onOpen:function()
-                {
-                    $('#thx-link').css({"display":"block"}); 
-                },
-                onClosed:function()
-                {
-                    $('#thx-link').css({"display":"none"});
-                    $("form").submit();
-                }
-            });
-        }*/
     });
 });
+
+
 
 /* this is for FACEBOOK LIKE
 (function(d, s, id) {

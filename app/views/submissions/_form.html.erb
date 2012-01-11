@@ -16,8 +16,9 @@
   </div>
   <div id="recaptcha_widget">
     <div id="recaptcha_image"></div>
+    <%= label_tag(:recaptcha_response_field, "R U HUMAN?") %>
     <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />
-    <div><a href="javascript:Recaptcha.reload()">RELOAD</a></div>
+    <a id="recaptcha_reload" href="javascript:Recaptcha.reload()">RELOAD</a>
   </div>
 
   <%= recaptcha_tags :display => {:theme => 'custom', :custom_theme_widget => 'recaptcha_widget'} %>

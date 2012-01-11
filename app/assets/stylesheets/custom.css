@@ -115,6 +115,11 @@ textarea {
 	text-align:center;
 }
 
+
+div.field, div.actions {
+    margin-bottom: 4px;
+}
+
 .actions{
 	margin-left:30%;
 }
@@ -138,6 +143,11 @@ form {
   display: none;
   margin:0 auto;
   padding-left:15px;
+}
+
+#recaptcha_widget {
+    position: relative;
+    bottom: 10px;
 }
 
 #submit-text1 {
