@@ -1,30 +1,23 @@
 $(function(){
+    var pathname = window.location.pathname;
+    
     // this is for COLORBOX
     $('.normal-pop').colorbox(
     {
-        height: "350px",
+        height: "300px",
         width: "500px",
         href: "/about"
     });
     
-    /*$('#thx').click(function() {
-        $.colorbox(
-        {
-            inline:true, 
-            href:"#thx-link", 
-            width:"600px", 
-            height:"400px",
-            onOpen:function()
-            {
-                $('#thx-content').text(resp);
-                $('#thx-link').css({"display":"block"}); 
-            },
-            onClosed:function()
-            {
-                $('#thx-link').css({"display":"none"});
-            }
-        });        
-    });*/
+    //
+    //alert(pathname);
+        
+    $(window).bind("beforeunload", function() { 
+        if(pathname == "/admin") {
+            return "You're about to close the admin page. You have to re-signin to perform administration tasks"; 
+        } 
+    });
+
     
     // this is for SLIDE CLICK
     $('#toggle_open').click(function() {
@@ -43,6 +36,15 @@ $(function(){
             $("form").slideUp("slow");
         }
     });
+    
+    
+    
+    /* this is for COUNTDOWN TIMER*/
+    $('#cny_countdown').countdown({
+        until: $.countdown.UTCDate(+7, 2012, 1 - 1, 21)});
+    
+    // this is for validation 
+    //$("#new_submission").validate();
         
     // this is for CAPTCHA colorbox
     var content = $("#submission_content").val();
@@ -60,8 +62,8 @@ $(function(){
         {
             inline:true, 
             href:"#thx-link", 
-            width:"600px", 
-            height:"500px",
+            width:"500px", 
+            height:"365px",
             onOpen:function()
             {
                 $('#thx-content').text(resp);

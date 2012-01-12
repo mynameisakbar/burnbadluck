@@ -20,15 +20,15 @@
 */
 #cboxOverlay{background:url(colorbox_images/overlay.png) repeat 0 0;}
 #colorbox{}
-    #cboxTopLeft{width:21px; height:21px; background:url(colorbox_images/controls.png) no-repeat -101px 0;}
+    /*#cboxTopLeft{width:21px; height:21px; background:url(colorbox_images/controls.png) no-repeat -101px 0;}
     #cboxTopRight{width:21px; height:21px; background:url(colorbox_images/controls.png) no-repeat -130px 0;}
     #cboxBottomLeft{width:21px; height:21px; background:url(colorbox_images/controls.png) no-repeat -101px -29px;}
     #cboxBottomRight{width:21px; height:21px; background:url(colorbox_images/controls.png) no-repeat -130px -29px;}
-    #cboxMiddleLeft{width:21px; background:url(colorbox_images/controls.png) left top repeat-y;}
+    /*#cboxMiddleLeft{width:21px; background:url(colorbox_images/controls.png) left top repeat-y;}
     #cboxMiddleRight{width:21px; background:url(colorbox_images/controls.png) right top repeat-y;}
     #cboxTopCenter{height:21px; background:url(colorbox_images/border.png) 0 0 repeat-x;}
-    #cboxBottomCenter{height:21px; background:url(colorbox_images/border.png) 0 -29px repeat-x;}
-    #cboxContent{background:#fff; overflow:hidden;}
+    #cboxBottomCenter{height:21px; background:url(colorbox_images/border.png) 0 -29px repeat-x;}*/
+    #cboxContent{background:url(/assets/mainP.png); overflow:hidden;}
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{margin-bottom:28px;}
@@ -41,7 +41,7 @@
         #cboxNext:hover{background-position:-50px -25px;}
         #cboxLoadingOverlay{background:url(colorbox_images/loading_background.png) no-repeat center center;}
         #cboxLoadingGraphic{background:url(colorbox_images/loading.gif) no-repeat center center;}
-        #cboxClose{position:absolute; bottom:0; right:0; background:url(colorbox_images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxClose{position:relative; bottom:300px; left:465px; float:right; background:url(/assets/close.png); width:25px; height:25px; text-indent:-9999px;}
         #cboxClose:hover{background-position:-25px -25px;}
 
 /*

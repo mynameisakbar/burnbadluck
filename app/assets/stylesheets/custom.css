@@ -6,6 +6,13 @@ html
 	width:100%;
 }
 
+body{
+    margin:0 auto;
+    overflow-x:hidden;
+    background:url(/assets/bg.jpg);
+    background-repeat:repeat;
+}
+
 @font-face {
     font-family: 'BebasRegular';
     src: url('font/BEBAS___-webfont.eot');
@@ -81,10 +88,6 @@ h2 {
     font-size:2em;
 }  
 
-#thx-link#logo {
-    
-}
-
 
 /*this is for main section*/
 
@@ -107,7 +110,7 @@ h2 {
 }
 
 #main {
-    margin:0 auto;
+    margin: 0 auto;
     width:500px;
     text-align:center;
     position:relative; 
@@ -115,13 +118,13 @@ h2 {
 }
 
 #h1 {
-    font-size:2.5em;
+    font-size: 2.5em;
     line-height:1em;
     padding-left:0.5em;
 }
 
 #h3 {
-    font-size:1.5em;
+    font-size: 1.5em;
     padding-left:0.9em;
 }
 
@@ -151,7 +154,7 @@ label.footnote {
 #submission_name, #submission_email{
 	background:transparent;
 	position:relative;
-	width:230px;
+	width:240px;
 	margin-left:8px;
     vertical-align:top;
     bottom:4px;
@@ -251,15 +254,13 @@ div.field, div.actions {
 	margin-left:30%;
 }
 
-
-
 #border{
 	border-color: black;
 	border-style: solid;
 	border:1px;
 }
 
-form {
+#new_submission {
   display: none;
   margin:0 auto;
   padding-left:15px;
@@ -310,6 +311,7 @@ form {
   padding-top:50px;
   font-size:14px;
   font-family:arial;
+  min-height:100px;
 }
 
 .dd {
@@ -397,3 +399,32 @@ input:focus, textarea:focus {
     -moz-box-shadow: 0 0 5px rgba(0, 0, 255, 1);
     border:1px solid rgba(0,0,255, 0.8); 
 }
+
+label.error{
+	margin-left:80px;
+	
+}
+
+#cny_countdown{
+	height:108px;
+	width:251px;
+	float:right;
+	position:relative;
+	bottom:55px;
+	left:170px;
+}
+
+#text_cny{
+	height:20px;
+	width:100px;
+	background:url(/assets/countdown.png);
+	float:right;
+}
+
+#soc-button-share{
+    display:block;
+    position:relative;
+    top:20px;
+    right:-70px;
+}
+

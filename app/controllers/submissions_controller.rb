@@ -1,6 +1,6 @@
 class SubmissionsController < ApplicationController           
   http_basic_authenticate_with :name => "admin", :password => "deleteAdm", :only => :destroy 
-  http_basic_authenticate_with :name => "admin", :password => "editAdm", :only => :edit
+  http_basic_authenticate_with :name => "test", :password => "test", :only => :update
 
   # GET /submissions
   # GET /submissions.json
@@ -65,11 +65,10 @@ class SubmissionsController < ApplicationController
 
     respond_to do |format|
       if @submission.update_attributes(params[:submission])
-        format.html { redirect_to @submission, notice: 'Submission was successfully updated.' }
-        format.json { head :ok }
+          format.js { render :json => @submission.content }         
       else
-        format.html { render action: "edit" }
-        format.json { render json: @submission.errors, status: :unprocessable_entity }
+          format.html { render action: "edit" }
+          format.json { render json: @submission.errors, status: :unprocessable_entity }
       end
     end
   end
