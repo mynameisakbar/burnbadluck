@@ -9,7 +9,8 @@ $(function(){
     
     // this is for SLIDE CLICK
     $('#toggle').click(function() {
-        if ($("form").is(":hidden")) {        
+        if ($("form").is(":hidden")) {
+            $('#toggle').hide();
             $("form").slideDown("slow");
         }  else {
             $("form").slideUp("slow");
@@ -98,7 +99,7 @@ $(function(){
             picture: 'http://www.hyperarts.com/external-xfbml/share-image.gif',
             caption: 'This is the content of the "caption" field.',
             description: 'This is the content of the "description" field, below the caption.',
-            message: 'Burn your bad luck with us NAO! #burnbadluck'
+            message: 'My bad luck is waiting to be burnt to a crisp. Dont let yours follow you into the new year. Submit and watch it burnt at www.burnbadluck.com'
         });
     });
     
