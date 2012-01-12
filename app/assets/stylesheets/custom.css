@@ -76,13 +76,48 @@ html
 }  
 
 
-/**/
+/*this is for main section*/
+
+#dragonR{
+	background:url(/assets/dragon-L.png);
+	background-repeat:no-repeat;
+	position:relative;
+	height:300px;	
+	width:340px;
+}
+
+#dragonL{
+	background:url(/assets/dragon-r.png);
+	background-repeat:no-repeat;
+	position:relative;
+	height:400px;
+	width:340px;
+	float:right;
+	bottom:300px;	
+}
+
+#main {
+    margin: 0 auto;
+    width:500px;
+    text-align:center;
+    position:relative; 
+    top:-300px;
+}
+
+#h1 {
+    font-size: 2.5em;
+    line-height:1em;
+    padding-left:0.5em;
+}
+
+#h3 {
+    font-size: 1.5em;
+    padding-left:0.9em;
+}
 
 
 
-
-
-
+/*this is for footer section*/
 
 footer{
 	position: relative;
@@ -121,25 +156,13 @@ textarea {
   padding:15px;
 }
 
-.section {
-  width: 500px;
-  margin: 0 auto;   
-  text-align: center;
-}
-
 #section{
   width: 310px;
   margin: 0 auto;   
   text-align: center;	
 }
 
-#main {
-  margin: 0 auto;
-  width:500px;
-  text-align:center;
-  position:relative; 
-  top:-300px;
-}
+
 
 #thx-link {
   text-align: left;
@@ -282,25 +305,6 @@ br { clear: both; }
   font-size: 13px;
   font-weight: bold;
   color: #000;
-}
-
-#dragonR{
-	background:url(/assets/dragon-L.png);
-	background-repeat:no-repeat;
-	position:relative;
-	height:300px;	
-	width:340px;
-	top:200px;
-}
-
-#dragonL{
-	background:url(/assets/dragon-r.png);
-	background-repeat:no-repeat;
-	position:relative;
-	height:400px;
-	width:340px;
-	float:right;
-	bottom:100px;	
 }
 
 #share_button_head {
