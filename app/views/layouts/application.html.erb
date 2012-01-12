@@ -28,25 +28,6 @@
 	})();	
   </script>  
   <%= csrf_meta_tags %>
-  
-  <!--script type="text/javascript">
-  	var ip;	
-	
-  	$(function(){
-  		//var challenge = Recaptcha.get_challenge();
-  		//var response = Recaptcha.get_response();
-  		/*$.getJSON("http://jsonip.appspot.com?callback=?",function(data){
-  			ip = data.ip;
-		});*/
-  		
-  		Recaptcha.create("6LfmJMwSAAAAACHiWF9-GIBaVSP6uTqFyY9HoCFw", "captcha", 
-  		{
-  			theme: "clean",
-        	callback: Recaptcha.focus_response_field
-    	});
-    });
-    
-  </script-->
 </head>
 <body>
 	<div id="fb-root"></div>
@@ -68,21 +49,33 @@
 			document.getElementById('fb-root').appendChild(e);
 		}());
 	</script>
-	<div class="container">  
-  	 <div id="logo"><%= image_tag("logo.png", :alt => "Sample App", :class => "round") %></div>
+	<div class="container"> 
+  	 <header>
+  	 	<nav>
+  	 		<%= image_tag("logo.png", :alt => "Sample App", :id => "logo") %>
+  	 		<div id="about-link" class="normal-pop"></div>  	 		
+  	 		<div id="soc-button-head">
+	 			<%= image_tag("fbb.png", :alt => "Share FB", :id => "share_button_head" , :class => "share_button share_button2") %>
+	 			<iframe allowtransparency="true" frameborder="0" scrolling="no"
+        		src="//platform.twitter.com/widgets/tweet_button.html?count=none&text=Burn%20Bad%20Luck&url=http%3A%2F%2Fwww.burnbadluck.com&hashtags=burnbadluck"
+        		style="width:60px; height:20px;"></iframe>
+
+	 			<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style ">
+					<a class="addthis_counter addthis_pill_style"></a>
+				</div>
+				<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f0e9b6015fb6640"></script>
+				<!-- AddThis Button END -->
+	 		</div> 	 		
+  	 	</nav>
+	</header>
 	
-	 <div id="soc-button-head">
-	 	<%= image_tag("fbb.png", :alt => "Share FB", :id => "share_button_head" , :class => "share_button share_button2") %>
-	 	<a href="https://twitter.com/share" class="twitter-share-button2" data-text="Burn your bad luck with us NAO!" data-hashtags="burnbadluck" data-url="http://www.burnbadluck.com" data-lang="en"><img src="/assets/tb.png"></a>
-	 </div>
-	 
-	 <div id="dragonR"></div>	 
-	 <div id="dragonL"></div>
-	 
 	 <!--div class="fb-like" data-href="http://www.facebook.com/heydiaspora" data-send="false" data-layout="button_count" 	data-width="30" data-show-faces="false"></div-->
 	 
-	 <div class="section">
-	 	<%= yield %>
+	 <!--div class="section">
+	 	<div id="dragonR"></div>	 
+	 	<%= yield %>	 		 
+	 	<div id="dragonL"></div>
 	 </div>
 	<footer>
 		<%= image_tag("footer.png", :alt => "Footer") %>	

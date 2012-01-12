@@ -1,14 +1,14 @@
-body { 
-	margin:0 auto;
-	overflow-x:hidden;
-	background:url(/assets/bg.jpg);
-	background-repeat:repeat;
-	
-}
+/* This is for parent */
 
-html, body{
+html 
+{
 	height:100%;
 	width:100%;
+}
+
+@font-face{
+	font-family: bebas;
+	src: url(BEBAS___.TTF);
 }
 
 .container {
@@ -21,19 +21,74 @@ html, body{
 	padding-bottom:652px;
 }
 
+/* This is for header */
+
+#logo {
+    float:left;
+}
+
+#about-link { 
+    /*border: solid red;*/
+    background:url(/assets/about-rope.png);
+    width:120px;
+    height:250px;
+    margin:0 auto;
+}
+
+#soc-button-head {
+    position:relative;
+    float:right;
+    bottom:250px;
+}
+
+.addthis_toolbox {
+    float:right;
+    position:relative;
+    bottom:25px;
+}
+
+.team{
+    text-align:right;
+    font-size:10px;
+}
+
+#about {
+    text-align:left;
+}
+
+#about h2 {
+    font-family:bebas;
+}  
+
+
+/**/
+
+
+
+
+
+
+
 footer{
 	position: relative;
     	bottom: 0px;
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 #fb-root{
 	width:500px;
-}
-
-@font-face{
-	font-family: bebas;
-	src: url(BEBAS___.TTF);
 }
 
 textarea {
@@ -43,17 +98,6 @@ textarea {
 	resize:none;
 	background:transparent;
 }
-
-#logo {
-    float:left;
-}
-
-#soc-button-head {
-    float:right;
-    position:relative;
-}
-
-#soc-button {}
 
 /*h2 { margin: 0 }
 */
@@ -80,20 +124,6 @@ textarea {
   text-align:center;
   position:relative; 
   top:-300px;
-}
-
-#about-link { 
-  /*border: solid red;
-  margin: 0 200px 15px 200px;*/
-  background:url(/assets/about-rope.png);
-  width:120px;
-  height:250px;
-  margin:0 auto;
-}
-
-#about {
-  text-align: left;
-  overflow: hidden;
 }
 
 #thx-link {
@@ -269,16 +299,16 @@ br { clear: both; }
 }
 
 
-.twitter-share-button{
+/*.twitter-share-button{
 	position:relative;
 	left:177px;
 	top:3px;
-}
+}*/
 
-iframe{
+/*iframe{
 	position:relative;
 	right:-600px;
-}
+}*/
 
 #notice { display:none; }
 
