@@ -27,6 +27,11 @@ html
 	padding-bottom:652px;
 }
 
+h2 {
+    font-family: 'BebasRegular';
+}
+
+
 /* This is for header */
 
 #logo {
@@ -47,6 +52,11 @@ html
     bottom:250px;
 }
 
+#soc-button-thx {
+    position:relative;
+    float:left;
+}
+
 .addthis_toolbox {
     float:right;
     position:relative;
@@ -65,15 +75,15 @@ html
     text-align:left;
 }
 
-#about h2 {
-    font-family: 'BebasRegular';
-}
-
 #about p#caption{
     font-family: 'BebasRegular';
     color:#444;
     font-size:2em;
 }  
+
+#thx-link#logo {
+    
+}
 
 
 /*this is for main section*/

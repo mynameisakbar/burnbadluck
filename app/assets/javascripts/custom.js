@@ -7,6 +7,25 @@ $(function(){
         href: "/about"
     });
     
+    /*$('#thx').click(function() {
+        $.colorbox(
+        {
+            inline:true, 
+            href:"#thx-link", 
+            width:"600px", 
+            height:"400px",
+            onOpen:function()
+            {
+                $('#thx-content').text(resp);
+                $('#thx-link').css({"display":"block"}); 
+            },
+            onClosed:function()
+            {
+                $('#thx-link').css({"display":"none"});
+            }
+        });        
+    });*/
+    
     // this is for SLIDE CLICK
     $('#toggle_open').click(function() {
         if ($("form").is(":hidden")) {
@@ -23,25 +42,13 @@ $(function(){
             $('#toggle_open').show();
             $("form").slideUp("slow");
         }
-    });  
-    
-      
-    
-    /* this is for COUNTDOWN TIMER
-    $('#counter').countdown({
-        format: 'hh:mm',
-        image: '../assets/countdown_images/digits.png',
-        startTime: '24:00'
-    });*/
-    
-    // this is for validation 
-    //$("#new_submission").validate();
+    });
         
     // this is for CAPTCHA colorbox
     var content = $("#submission_content").val();
     var resp = $("#notice").text();
     if (resp == "ERROR") {
-        alert("You have not entered your CAPTCHA, please do so to proceed");
+        alert("You have not entered your CAPTCHA or your input is wrong, please do so to proceed");
     }
     
     $("form").validate();
@@ -53,8 +60,8 @@ $(function(){
         {
             inline:true, 
             href:"#thx-link", 
-            width:"550px", 
-            height:"300px",
+            width:"600px", 
+            height:"500px",
             onOpen:function()
             {
                 $('#thx-content').text(resp);
