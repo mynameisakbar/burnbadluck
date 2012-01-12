@@ -23,12 +23,14 @@
 	        </div>
 	</section>
 	<div id="new-submission-div" class="pad15">
-		<div id="h1">SUBMIT YOUR BAD LUCK</div>
-		<div id="h3">START LUCKY FOR THE LUNAR NEW YEAR</div>
-		<!--div id="submit-text1">SUBMIT YOUR BAD LUCK</div>
-		<div id="submit-text2">START LUCKY FOR THE LUNAR NEW YEAR</div-->
-		<div id="toggle_open">CLICK HERE</div>
-		<div id></div>
+		<div id="bef_toggle">
+			<div id="h1">SUBMIT YOUR BAD LUCK</div>
+			<div id="h3">START LUCKY FOR THE LUNAR NEW YEAR</div>
+			<p id="toggle_open">CLICK HERE</p>
+		</div>
+		
+		
+		<%= image_tag("close.png", :alt => "Close", :id => "toggle_close") %>
 		<%= render 'form' %>
 	</div>
 

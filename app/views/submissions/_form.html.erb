@@ -2,7 +2,7 @@
   <div class="field">
   	<%= label_tag(:submission_content, "BAD LUCK MESSAGE*") %>
 	<%= text_area(:submission, :content, :class => "required", :maxlength => "140") %>
-  	<!--%= label_tag(:submission_content, "*Y&R reserves the right to remove any inappropriate submissions") %-->
+  	<%= label_tag(:submission_content, "*Y&R reserves the right to remove any inappropriate submissions", :class => "footnote") %>
   </div>
   
   <div class="field">
@@ -16,9 +16,20 @@
   </div>
   <div id="recaptcha_widget">
     <div id="recaptcha_image"></div>
-    <%= label_tag(:recaptcha_response_field, "R U HUMAN?") %>
     <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />
-    <a id="recaptcha_reload" href="javascript:Recaptcha.reload()">RELOAD</a>
+    <%= label_tag(:recaptcha_response_field, "TYPE THE CHARACTERS YOU SEE IN THE PICTURE ABOVE", :class => "footnote") %>
+    
+    <div id="recaptcha_bttn">    	
+    	<a id="recaptcha_reload" href="javascript:Recaptcha.reload()">
+    		<img id="recaptcha_reload" width="25" height="18" alt="Get a new challenge" src="http://www.google.com/recaptcha/api/img/clean/refresh.png">
+    	</a>
+    	<a href="javascript:Recaptcha.switch_type('audio')">
+    		<img id="recaptcha_switch_audio" class="recaptcha_only_if_image" width="25" height="15" alt="Get an audio challenge" src="http://www.google.com/recaptcha/api/img/clean/audio.png">
+    	</a>
+  		<a href="javascript:Recaptcha.switch_type('image')">
+  			<img id="recaptcha_switch_img" class="recaptcha_only_if_audio" width="25" height="15" alt="Get a visual challenge" src="http://www.google.com/recaptcha/api/img/clean/text.png">
+  		</a>
+  	</div>
   </div>
 
   <%= recaptcha_tags :display => {:theme => 'custom', :custom_theme_widget => 'recaptcha_widget'} %>

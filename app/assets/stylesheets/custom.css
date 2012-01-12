@@ -97,7 +97,7 @@ html
 }
 
 #main {
-    margin: 0 auto;
+    margin:0 auto;
     width:500px;
     text-align:center;
     position:relative; 
@@ -105,17 +105,52 @@ html
 }
 
 #h1 {
-    font-size: 2.5em;
+    font-size:2.5em;
     line-height:1em;
     padding-left:0.5em;
 }
 
 #h3 {
-    font-size: 1.5em;
+    font-size:1.5em;
     padding-left:0.9em;
 }
 
+#bef_toggle {
+    height: 90px;
+}
 
+#toggle_open {
+    text-align: center;
+}
+
+#toggle_close {
+    display:none;
+    position:relative;
+    float:right;
+    bottom:85px;
+}
+
+.field label {
+    font-size: 1.5em;
+}
+
+label.footnote {
+    font-size:10px;    
+}
+
+#submission_name, #submission_email{
+	background:transparent;
+	position:relative;
+	width:230px;
+	margin-left:8px;
+    vertical-align:top;
+    bottom:4px;
+}
+
+label.error{
+	margin-left:80px;
+    font-size:100%;
+}
 
 /*this is for footer section*/
 
@@ -206,15 +241,7 @@ div.field, div.actions {
 	margin-left:30%;
 }
 
-#submission_name, #submission_email{
-	background: transparent;
-	position: relative;
-	bottom: 4px;
-	width: 250px;
-	margin-left: 8px;
-	font-family:helvetica;
-	margin-bottom: 12px;
-}
+
 
 #border{
 	border-color: black;
@@ -238,8 +265,16 @@ form {
 }
 
 #recaptcha_response_field {
-	width: 195px;
+	width: 295px;
 }
+
+#recaptcha_bttn {
+    float:right;
+    position:relative;
+    right:10px;
+}
+
+.recaptcha_audio_cant_hear_link { display: none; }
 
 #submit-text {
 	margin-left:45px;
@@ -351,9 +386,4 @@ input:focus, textarea:focus {
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, 1); 
     -moz-box-shadow: 0 0 5px rgba(0, 0, 255, 1);
     border:1px solid rgba(0,0,255, 0.8); 
-}
-
-label.error{
-	margin-left:80px;
-	
 }

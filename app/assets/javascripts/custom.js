@@ -8,16 +8,24 @@ $(function(){
     });
     
     // this is for SLIDE CLICK
-    $('#toggle').click(function() {
+    $('#toggle_open').click(function() {
         if ($("form").is(":hidden")) {
-            $('#toggle').hide();
+            $('#toggle_open').hide();
+            $('#toggle_close').show();
+            $('#toggle_close').css({"display":"block"});                        
             $("form").slideDown("slow");
-        }  else {
-            $("form").slideUp("slow");
         }
     });
     
+    $('#toggle_close').click(function() {
+        if ($("form").not(":hidden")) {
+            $('#toggle_close').hide();
+            $('#toggle_open').show();
+            $("form").slideUp("slow");
+        }
+    });  
     
+      
     
     /* this is for COUNTDOWN TIMER
     $('#counter').countdown({
