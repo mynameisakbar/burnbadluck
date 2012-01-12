@@ -64,7 +64,7 @@
 	 		
     		<% if request.fullpath == "/admin" %>
     			<script>
-				$('.dd.edit').editable('./submissions/<%=submission.id%>', 
+				$('.dd.edit').editable('/submissions/<%=submission.id%>', 
     			{
     				name   : "submission[content]",
         			type   : 'textarea',
