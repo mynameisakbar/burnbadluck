@@ -2,7 +2,7 @@ $(function(){
     // this is for COLORBOX
     $('.normal-pop').colorbox(
     {
-        height: "315px",
+        height: "350px",
         width: "500px",
         href: "/about"
     });
