@@ -137,7 +137,7 @@ $(function(){
         FB.ui(
         {
             method: 'feed',
-            name: 'Burn Your Bad Luck NAO!',
+            name: 'Burn Your Bad Luck Now!',
             link: ' http://burnbadluck.com/submissions/' + id,
             picture: 'https://lh3.googleusercontent.com/-eZ9ZbcEVw7w/TxC0zy-vDiI/AAAAAAAAANo/Gm5TW_RW6f4/s800/fbavatar.jpg',
             caption: 'This is the content of the "caption" field.',
