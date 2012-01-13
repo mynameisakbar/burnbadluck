@@ -1,5 +1,7 @@
 $(function(){
     var pathname = window.location.pathname;
+    var colorbox = jQuery.colorbox;
+
     
     // this is for COLORBOX
     $('.normal-pop').colorbox(
@@ -7,6 +9,16 @@ $(function(){
         height: "300px",
         width: "500px",
         href: "/about"
+    });
+    
+    $('#caption').live("click", function(){
+        colorbox.close();
+        if ($("form").is(":hidden")) {
+            $('#toggle_open').hide();
+            $('#toggle_close').show();
+            $('#toggle_close').css({"display":"block"});                        
+            $("form").slideDown("slow");
+        }
     });
     
     //
@@ -67,7 +79,7 @@ $(function(){
             onOpen:function()
             {
                 $('#thx-content').text(resp);
-                $('#thx-link').css({"display":"block"}); 
+                $('#thx-link').css({"display":"block"});
             },
             onClosed:function()
             {
