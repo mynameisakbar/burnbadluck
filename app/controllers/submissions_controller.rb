@@ -1,35 +1,22 @@
-class SubmissionsController < ApplicationController 
-    #layout "individual", :except => [:index]
+class SubmissionsController < ApplicationController
+  USERS = { "admin" => "test" }
+  before_filter :auth, :only => :index
     
   http_basic_authenticate_with :name => "admin", :password => "deleteAdm", :only => :destroy 
   http_basic_authenticate_with :name => "test", :password => "test", :only => :update
-
-  # GET /submissions
-  # GET /submissions.json
-  def index
-    @submissions = Submission.all
-    @submission = Submission.new
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @submissions }
-      format.json { render json: @submission }
-    end
-  end
 
   # GET /submissions/1
   # GET /submissions/1.json
   def show
     @submission = Submission.find(params[:id])
     render :layout => "individual" and return
-
       
     respond_to do |format|
         format.html # show.html.erb
         #format.json { render json: @submission }
     end
   end
-
+    
   # GET /submissions/new
   # GET /submissions/new.json
   def new
@@ -88,4 +75,32 @@ class SubmissionsController < ApplicationController
       format.json { head :ok }
     end
   end
+    
+  # GET /submissions
+  # GET /submissions.json
+  def index
+      @submissions = Submission.all
+      @submission = Submission.new
+        
+      respond_to do |format|
+          format.html # index.html.erb
+          format.json { render json: @submissions }
+          format.json { render json: @submission }
+      end
+  end
+    
+  protected
+    def auth
+        #flash[:error] = request.fullpath
+        @url = request.fullpath
+        
+        if @url == "/admin" 
+            #flash[:error] = "haro"
+            authenticate_or_request_with_http_digest do |username| 
+                USERS[username]
+                #flash[:error] = "lol"
+                #reset_session
+            end
+        end
+    end
 end
