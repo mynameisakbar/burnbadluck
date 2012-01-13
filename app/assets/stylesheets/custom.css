@@ -34,6 +34,22 @@ body{
 	padding-bottom:652px;
 }
 
+#dlz{
+		background:url(/assets/singleM.png);
+		background-repeat:no-repeat;
+		width:280px;
+	  	margin: 0 auto;
+	  	text-align: left;
+	  	padding: 15px;
+	  	color:white;
+	  	padding-top:50px;
+	  	font-size:14px;
+	  	font-family:arial;
+	  	min-height:100px;
+		height:180px;
+
+}
+
 h2 {
     font-family: 'BebasRegular';
 }
@@ -173,6 +189,18 @@ footer{
 
 }
 
+#sglmsg{
+	position:relative;
+	top:30px;
+}
+
+#showfoot{
+	position: fixed;
+    	bottom: 0px;
+	clear:both;
+	margin-left:20%;
+	margin-right:auto;
+}
 
 
 
@@ -410,8 +438,8 @@ label.error{
 	width:251px;
 	float:right;
 	position:relative;
-	bottom:55px;
-	left:170px;
+	bottom:170px;
+	left:150px;
 }
 
 #text_cny{
