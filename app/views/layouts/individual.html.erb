@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"
+     xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+  <title>Burn Bad Luck</title>
+  <%= stylesheet_link_tag    "application" %>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->    
+  
+  <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+  <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+  
+  <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+  <%= stylesheet_link_tag 'custom', :media => 'screen' %>  
+  
+  <%= javascript_include_tag "application" %>
+  <script>
+  	// this is for GANALYTICS
+	var _gaq = _gaq || [];
+  	_gaq.push(['_setAccount', 'UA-28207206-1']);
+  	_gaq.push(['_trackPageview']);
+ 
+	(function() {
+    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();	
+  </script>  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<nav>
+				  <%= image_tag("logo.png", :alt => "Burn Bad Luck", :id => "logo") %>
+			</nav>
+		</header>
+		
+		<div class="section">
+			<%= yield %>
+		</div>
+	
+		<footer>
+			<%= image_tag("footer.png", :alt => "Footer") %>	
+		</footer>
+	</div>
+</body>
+</html>
