@@ -12,11 +12,11 @@ $(function(){
     //
     //alert(pathname);
         
-    $(window).bind("beforeunload", function() { 
+    /*$(window).bind("beforeunload", function() { 
         if(pathname == "/admin") {
             return "You're about to close the admin page. You have to re-signin to perform administration tasks"; 
         } 
-    });
+    });*/
 
     
     // this is for SLIDE CLICK
