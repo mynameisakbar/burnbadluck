@@ -123,7 +123,7 @@ $(function(){
         FB.ui(
         {
             method: 'feed',
-            name: 'Burn Your Bad Luck NAO!',
+            name: 'Burn Your Bad Luck Now!',
             link: ' http://burnbadluck.com/',
             picture: 'http://www.hyperarts.com/external-xfbml/share-image.gif',
             caption: 'This is the content of the "caption" field.',
@@ -140,7 +140,7 @@ $(function(){
             method: 'feed',
             name: 'Burn Your Bad Luck NAO!',
             link: ' http://burnbadluck.com/',
-            picture: 'http://www.hyperarts.com/external-xfbml/share-image.gif',
+            picture: '/assets/fbavatar.png',
             caption: 'This is the content of the "caption" field.',
             description: 'This is the content of the "description" field, below the caption.',
             message: "Burn baby burn! www.burnbadluck.com/submissions/" + id
