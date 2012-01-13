@@ -1,20 +1,11 @@
-<p id="notice"><%= notice %></p>
+<!--p id="notice"><%= notice %></p-->
 
-<p>
-  <b>Name:</b>
-  <%= @submission.name %>
-</p>
+<div id ="list-submission">
+	<div class="dl">
+		<b><%= @submission.name %></b>
+		<p class="dd edit"><%= @submission.content %></p>
+	</div>
+</div>
 
-<p>
-  <b>Email:</b>
-  <%= @submission.email %>
-</p>
-
-<p>
-  <b>Content:</b>
-  <%= @submission.content %>
-</p>
-
-
-<%= link_to 'Edit', edit_submission_path(@submission) %> |
-<%= link_to 'Back', submissions_path %>
+<!--%= link_to 'Edit', edit_submission_path(@submission) %> |
+<%= link_to 'Back', submissions_path %-->

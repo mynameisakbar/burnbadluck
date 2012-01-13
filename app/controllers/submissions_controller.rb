@@ -1,4 +1,6 @@
-class SubmissionsController < ApplicationController           
+class SubmissionsController < ApplicationController 
+    #layout "individual", :except => [:index]
+    
   http_basic_authenticate_with :name => "admin", :password => "deleteAdm", :only => :destroy 
   http_basic_authenticate_with :name => "test", :password => "test", :only => :update
 
@@ -19,10 +21,12 @@ class SubmissionsController < ApplicationController
   # GET /submissions/1.json
   def show
     @submission = Submission.find(params[:id])
+    render :layout => "individual" and return
 
+      
     respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @submission }
+        format.html # show.html.erb
+        #format.json { render json: @submission }
     end
   end
 
