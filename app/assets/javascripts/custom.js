@@ -128,7 +128,7 @@ $(function(){
             picture: 'https://lh3.googleusercontent.com/-eZ9ZbcEVw7w/TxC0zy-vDiI/AAAAAAAAANo/Gm5TW_RW6f4/s800/fbavatar.jpg',
             caption: 'This is the content of the "caption" field.',
             description: 'This is the content of the "description" field, below the caption.',
-            message: 'My bad luck is waiting to be burnt to a crisp. Dont let yours follow you into the new year. Submit and watch it burnt at www.burnbadluck.com'
+            message: 'test'
         });
     });
     
