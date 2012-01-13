@@ -41,7 +41,7 @@
         #cboxNext:hover{background-position:-50px -25px;}
         #cboxLoadingOverlay{background:url(colorbox_images/loading_background.png) no-repeat center center;}
         #cboxLoadingGraphic{background:url(colorbox_images/loading.gif) no-repeat center center;}
-        #cboxClose{position:relative; bottom:300px; left:465px; float:right; background:url(/assets/close.png); width:25px; height:25px; text-indent:-9999px;}
+        #cboxClose{position: relative;bottom: 345px;left: 460px; float:right; background:url(/assets/close.png); width:25px; height:25px; text-indent:-9999px;}
         #cboxClose:hover{background-position:-25px -25px;}
 
 /*

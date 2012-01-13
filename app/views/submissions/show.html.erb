@@ -1,11 +1,16 @@
 <!--p id="notice"><%= notice %></p-->
 
-<div id ="list-submission">
-	<div class="dl">
+<div id ="list-submission2">
+	<div class="dl" id="dlz">
+		<div id="sglmsg">
 		<b><%= @submission.name %></b>
 		<p class="dd edit"><%= @submission.content %></p>
+		</div>
 	</div>
 </div>
+<footer id="showfoot">
+	<%= image_tag("footer2.png", :alt => "Footer") %>	
+</footer>
 
 <!--%= link_to 'Edit', edit_submission_path(@submission) %> |
 <%= link_to 'Back', submissions_path %-->

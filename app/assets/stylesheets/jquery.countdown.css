@@ -14,9 +14,9 @@
 	width: 100%;
 	padding: 0px 2px;
 	text-align: center;
-	color:#cacaca;
-	font-family:bebas;
-	font-size:21px;
+	color:#7d7d7d;
+	font-family:Arial;
+	font-size:19px;
 }
 .countdown_show1 .countdown_section {
 	width: 98%;
@@ -44,6 +44,8 @@
 	float: left;
 	font-size: 75%;
 	text-align: center;
+	position:relative;
+	top:20px;
 }
 .countdown_amount {
 	font-size: 200%;
@@ -51,5 +53,5 @@
 .countdown_descr {
 	display: block;
 	width: 100%;
-	font-size:18px;
+	font-size:8px;
 }

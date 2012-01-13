@@ -34,6 +34,22 @@ body{
 	padding-bottom:652px;
 }
 
+#dlz{
+		background:url(/assets/singleM.png);
+		background-repeat:no-repeat;
+		width:280px;
+	  	margin: 0 auto;
+	  	text-align: left;
+	  	padding: 15px;
+	  	color:white;
+	  	padding-top:50px;
+	  	font-size:14px;
+	  	font-family:arial;
+	  	min-height:100px;
+		height:180px;
+
+}
+
 h2 {
     font-family: 'BebasRegular';
 }
@@ -67,7 +83,7 @@ h2 {
 .addthis_toolbox {
     float:right;
     position:relative;
-    bottom:25px;
+    bottom:22px;
 }
 
 .team {
@@ -144,7 +160,7 @@ h2 {
 }
 
 .field label {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 label.footnote {
@@ -173,6 +189,18 @@ footer{
 
 }
 
+#sglmsg{
+	position:relative;
+	top:30px;
+}
+
+#showfoot{
+	position: fixed;
+    	bottom: 0px;
+	clear:both;
+	margin-left:20%;
+	margin-right:auto;
+}
 
 
 
@@ -202,6 +230,7 @@ textarea {
 
 .pad15 {
   padding:15px;
+
 }
 
 #section{
@@ -215,6 +244,8 @@ textarea {
 #thx-link {
   text-align: left;
   display: none;
+position: relative;
+bottom: 30px;
 }
 
 #thx-content {
@@ -246,7 +277,7 @@ div.field, div.actions {
 .actions input{
 	background: transparent;
 	font-family: bebas;
-	font-size: 16px;
+	font-size: 13px;
 	color: #E7E7E7
 }
 
@@ -277,6 +308,7 @@ div.field, div.actions {
 
 #recaptcha_response_field {
 	width: 295px;
+	background: transparent;
 }
 
 #recaptcha_bttn {
@@ -285,10 +317,14 @@ div.field, div.actions {
     right:10px;
 }
 
+#recaptcha_reload img{
+	height:16px;
+}
+
 .recaptcha_audio_cant_hear_link { display: none; }
 
 #submit-text {
-	margin-left:45px;
+
 }
 
 #submit-text2 {
@@ -371,10 +407,10 @@ br { clear: both; }
 	top:3px;
 }*/
 
-/*iframe{
-	position:relative;
-	right:-600px;
-}*/
+iframe{
+	margin-left:5px;
+	margin-right:5px;;
+}
 
 #notice { display:none; }
 
@@ -410,8 +446,8 @@ label.error{
 	width:251px;
 	float:right;
 	position:relative;
-	bottom:55px;
-	left:170px;
+	bottom:170px;
+	left:150px;
 }
 
 #text_cny{
@@ -424,7 +460,13 @@ label.error{
 #soc-button-share{
     display:block;
     position:relative;
-    top:20px;
-    right:-70px;
+top: 23px;
+right: -130px;
 }
 
+#submithome{
+	float:left;
+	position:relative;
+	top:230px;
+	right:260px;
+}
