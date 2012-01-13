@@ -127,8 +127,7 @@ $(function(){
             link: ' http://burnbadluck.com/',
             picture: 'https://lh3.googleusercontent.com/-eZ9ZbcEVw7w/TxC0zy-vDiI/AAAAAAAAANo/Gm5TW_RW6f4/s800/fbavatar.jpg',
             caption: 'This is the content of the "caption" field.',
-            description: 'My bad luck is waiting to be burnt to a crisp. Dont let yours follow you into the new year. Submit and watch it burnt at www.burnbadluck.com.',
-            message: ''
+            description: 'My bad luck is waiting to be burnt to a crisp. Dont let yours follow you into the new year. Submit and watch it burnt at www.burnbadluck.com.'
         });
     });
     
@@ -139,11 +138,10 @@ $(function(){
         {
             method: 'feed',
             name: 'Burn Your Bad Luck NAO!',
-            link: ' http://burnbadluck.com/',
+            link: ' http://burnbadluck.com/submissions/' + id,
             picture: 'https://lh3.googleusercontent.com/-eZ9ZbcEVw7w/TxC0zy-vDiI/AAAAAAAAANo/Gm5TW_RW6f4/s800/fbavatar.jpg',
             caption: 'This is the content of the "caption" field.',
-            description: 'My bad luck is waiting to be burnt to a crisp. Dont let yours follow you into the new year. Submit and watch it burnt at www.burnbadluck.com',
-            message: "Burn baby burn! www.burnbadluck.com/submissions/" + id
+            description: 'My bad luck is waiting to be burnt to a crisp. Dont let yours follow you into the new year. Submit and watch it burnt at www.burnbadluck.com'
         });
     });
 });
