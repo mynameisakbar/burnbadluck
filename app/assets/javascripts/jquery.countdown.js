@@ -17,7 +17,7 @@ function Countdown() {
 	this.regional = []; // Available regional settings, indexed by language code
 	this.regional[''] = { // Default regional settings
 		// The display texts for the counters
-		labels: ['Years', 'Months', 'Weeks', 'Days', 'Hours', 'Minutes', 'Seconds'],
+		labels: ['Years', 'Months', 'Weeks', 'Days', 'Hours', 'Mins', 'Secs'],
 		// The display texts for the counters if only one
 		labels1: ['Year', 'Month', 'Week', 'Day', 'Hour', 'Minute', 'Second'],
 		compactLabels: ['y', 'm', 'w', 'd'], // The compact texts for the counters

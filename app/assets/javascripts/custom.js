@@ -4,7 +4,7 @@ $(function(){
     // this is for COLORBOX
     $('.normal-pop').colorbox(
     {
-        height: "300px",
+        height: "350px",
         width: "500px",
         href: "/about"
     });
@@ -63,7 +63,7 @@ $(function(){
             inline:true, 
             href:"#thx-link", 
             width:"500px", 
-            height:"365px",
+            height:"350px",
             onOpen:function()
             {
                 $('#thx-content').text(resp);
