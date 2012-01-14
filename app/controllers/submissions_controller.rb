@@ -89,11 +89,6 @@ class SubmissionsController < ApplicationController
           format.html # index.html.erb
           format.json { render json: @submissions }   
           format.json { render json: @submission }
-          format.js do
-              render :update do |page|
-                 page.insert_html :bottom, 'table_body', :partial => 'submission_list'
-              end
-          end
       end
   end
     

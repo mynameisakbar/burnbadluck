@@ -49,7 +49,7 @@
 	<div id ="list-submission">
 	
 		<%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
-		<%= will_paginate %>
+		<!--%= will_paginate %-->
 		<% @submissions.each do |submission| %>
   		<div class="dl">
 		<b><%= submission.name %></b>
@@ -92,6 +92,7 @@
   		</div>
   		<% end %>
   		<%= will_paginate %>
+  		<!--%= pageless(@submissions.total_pages, submissions_path) %-->
 	</div>
 	<br /><br/>
 </div>
