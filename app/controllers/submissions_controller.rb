@@ -40,7 +40,7 @@ class SubmissionsController < ApplicationController
 
     respond_to do |format|
       if verify_recaptcha() && @submission.save
-          Notifier.signup_email(@submission).deliver
+          #Notifier.signup_email(@submission).deliver
           format.html { redirect_to submissions_url, notice: @submission.content }
           format.json { render json: @submission, status: :created, location: @submission }
       else
@@ -79,13 +79,21 @@ class SubmissionsController < ApplicationController
   # GET /submissions
   # GET /submissions.json
   def index
-      @submissions = Submission.all
+      @submissions = Submission.paginate(:page => params[:page], 
+                                         :per_page => 5,
+                                         :order => "created_at DESC")
+      #@submissions = Submission.all
       @submission = Submission.new
         
       respond_to do |format|
           format.html # index.html.erb
-          format.json { render json: @submissions }
+          format.json { render json: @submissions }   
           format.json { render json: @submission }
+          format.js do
+              render :update do |page|
+                 page.insert_html :bottom, 'table_body', :partial => 'submission_list'
+              end
+          end
       end
   end
     
