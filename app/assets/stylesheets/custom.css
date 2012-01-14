@@ -477,8 +477,13 @@ right: -130px;
 .pagination{
     text-align:center;
     font-size:14px;
-    
 }
+
+.pagination a {
+    color: #666;
+}
+
+
 
 em{
 color:#1D7EC3;
