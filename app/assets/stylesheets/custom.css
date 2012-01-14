@@ -85,7 +85,7 @@ h2 {
 .addthis_toolbox {
     float:right;
     position:relative;
-    bottom:22px;
+    bottom:23px;
 }
 
 .team {
@@ -158,7 +158,8 @@ h2 {
     display:none;
     position:relative;
     float:right;
-    bottom:85px;
+    bottom:117px;
+    left:5px;
 }
 
 .field label {
