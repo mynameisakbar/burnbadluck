@@ -474,4 +474,12 @@ right: -130px;
 	right:260px;
 }
 
- 
+.pagination{
+    text-align:center;
+    font-size:14px;
+    
+}
+
+em{
+color:#1D7EC3;
+}
