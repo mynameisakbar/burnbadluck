@@ -62,17 +62,19 @@ h2 {
 }
 
 #about-link { 
-    /*border: solid red;*/
-    background:url(/assets/about-rope.png);
+    /*border: solid red;
+    background:url(/assets/about-rope.png);*/
     width:120px;
     height:250px;
-    margin:0 auto;
+    position:relative;
+    left:15%;
+    
 }
 
 #soc-button-head {
     position:relative;
     float:right;
-    bottom:250px;
+    top: 3px;
 }
 
 #soc-button-thx {
@@ -444,7 +446,6 @@ label.error{
 	float:right;
 	position:relative;
 	bottom:170px;
-	left:150px;
 }
 
 #text_cny{
