@@ -4,7 +4,7 @@ $(function(){
 
     
     // this is for COLORBOX
-    $('.normal-pop').colorbox(
+    $('#about-link').colorbox(
     {
         height: "350px",
         width: "500px",
