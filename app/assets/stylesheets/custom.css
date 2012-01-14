@@ -100,10 +100,12 @@ h2 {
     text-align:left;
 }
 
-#about p#caption{
+#about span#caption{
     font-family: 'BebasRegular';
     color:#444;
     font-size:2em;
+position: relative;
+bottom: 5px
 }  
 
 
@@ -206,7 +208,9 @@ footer{
 
 
 
-
+.section{
+	height:1800px;
+}
 
 
 
