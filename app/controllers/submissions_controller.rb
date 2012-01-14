@@ -2,7 +2,7 @@ class SubmissionsController < ApplicationController
   USERS = { "admin" => "test" }
   before_filter :auth, :only => :index
     
-  http_basic_authenticate_with :name => "admin", :password => "deleteAdm", :only => :destroy 
+  http_basic_authenticate_with :name => "test", :password => "test", :only => :destroy 
   http_basic_authenticate_with :name => "test", :password => "test", :only => :update
 
   # GET /submissions/1
