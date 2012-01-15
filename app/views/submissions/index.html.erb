@@ -51,7 +51,15 @@
 		<!--%= will_paginate %-->
 		<%= render(:partial => "submission") %>
   		<%= will_paginate(@submissions) %>
-  		<%= pageless(@submissions.total_pages, submissions_path) %>
+  		<% if request.fullpath == "/submissions" %>
+  			<script src="/javascripts/jquery.pageless.js?body=1" type="text/javascript"></script>
+  			<script>
+  				$('#list-submission').pageless({ totalPages: 10,
+                                     url: '/submissions/',
+                                     loaderMsg: 'Loading more results'
+   				});
+  			</script>
+  		<% end %>
 	</div>
 	<br /><br/>
 </div>
