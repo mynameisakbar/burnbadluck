@@ -505,9 +505,8 @@ em{
 color:#1D7EC3;
 }
 
-.bottom {
-    height: 650px;
-    position: absolute;
-    top: 1600px;
+.bottom{ 	
+    height:650px;
+    position:relative;
 }
 
