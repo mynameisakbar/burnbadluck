@@ -60,7 +60,7 @@
                  , pagination: '.pagination'
                  , params: {}
                  , url: location.href
-                 , loaderImage: "/images/load.gif"
+                 , loaderImage: "/assets/load.gif"
                  }
     , container = settings.container;
     
