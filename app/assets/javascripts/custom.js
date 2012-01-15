@@ -20,6 +20,16 @@ $(function(){
         }
     });
     
+    $('#sbmt').click(function() {
+        //alert("test");
+        $('#new_submission').submit();
+    });
+        
+    $('#clr').click(function() {
+        //alert("test");
+        $('#new_submission')[0].reset();
+    });   
+    
     //
     //alert(pathname);
         

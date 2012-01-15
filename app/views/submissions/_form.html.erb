@@ -2,7 +2,9 @@
   <div class="field">
   	<%= label_tag(:submission_content, "BAD LUCK MESSAGE (Maximum 200 characters)*") %>
 	<%= text_area(:submission, :content, :class => "required", :maxlength => "140") %>
-  	<%= label_tag(:submission_content, "*Y&R reserves the right to remove any inappropriate submissions", :class => "footnote") %>
+  	<p>
+  		<%= label_tag(:submission_content, "*Y&R reserves the right to remove any inappropriate submissions", :class => "footnote") %>
+  	</p>
   </div>
   
   <div class="field">
@@ -35,8 +37,8 @@
   <%= recaptcha_tags :display => {:theme => 'custom', :custom_theme_widget => 'recaptcha_widget'} %>
   
   <div class="actions">
-  	<%= submit_tag("CLEAR", {:name => "reset", :id => "reset_button", :type => "reset" }) %>
-  	<%= submit_tag("SUBMIT", :id => "submit_button") %>
+  	<%= image_tag("clearbtn.png", :alt => "Clear", :id => "clr") %>
+  	<%= image_tag("submitbtn.png", :alt => "submit", :id => "sbmt") %>
   </div>
   
   <p id="notice"><%= notice %></p>
