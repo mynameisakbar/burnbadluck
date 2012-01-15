@@ -105,7 +105,7 @@ class SubmissionsController < ApplicationController
         if @url == "/admin" 
             #flash[:error] = "haro"
             authenticate_or_request_with_http_digest do |username| 
-                USERS[username]
+            USERS[username]
                 #flash[:error] = "lol"
                 #reset_session
             end
