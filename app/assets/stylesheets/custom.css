@@ -46,7 +46,6 @@ body{
 	  	font-size:14px;
 	  	font-family:arial;
 	  	min-height:100px;
-		height:180px;
 
 }
 
@@ -59,8 +58,43 @@ h2 {
 
 #logo {
     position:fixed;
-    bottom:400px;
+    bottom:540px;
     /*top:20px;*/
+}
+
+#share { float:right; 
+
+	}
+
+#soc-button-share a{
+	background-color:black;
+	color:white;
+	border-radius:10px;
+	border:2px;
+	padding:5px;
+	text-decoration:none;
+	font-size:12px;
+	-moz-box-shadow: inset 0 0 5px #888;
+	-webkit-box-shadow: inset 0 0 5px#888;
+	box-shadow: inner 0 0 5px #888;
+}
+
+#soc-button-share a:hover{
+	background-color:white;
+	color:black;
+	border-radius:10px;
+	border:2px;
+	padding:5px;
+	-moz-box-shadow: inset 0 0 5px #888;
+	-webkit-box-shadow: inset 0 0 5px#888;
+	box-shadow: inner 0 0 5px #888;
+}
+
+.logo-static {
+	position: relative;
+	float: left;
+	top: 20px;
+
 }
 
 #about-link { 
@@ -130,6 +164,7 @@ bottom: 5px
 	position:fixed;
 	height:400px;
 	width:340px;
+	left:875px;
 }
 
 #main {
@@ -204,11 +239,6 @@ footer{
 
 }
 
-#sglmsg{
-	position:relative;
-	top:30px;
-    left:30px;
-}
 
 #showfoot{
 	position: relative;
@@ -271,7 +301,7 @@ bottom: 30px;
   text-align:left;
   width:320px;
   position:relative;
-  bottom:20px;
+  bottom:110px;
   font-family:bebas;
 }
 
@@ -358,6 +388,8 @@ div.field, div.actions {
   font-size:14px;
   font-family:arial;
   min-height:100px;
+  position:relative;
+  bottom:90px;
 }
 
 .dd {
@@ -378,6 +410,11 @@ div.field, div.actions {
 	position:relative;
 	bottom:20px;
 	font-family:helvetica;
+}
+
+#list-submission2 {
+	top: 90px;
+	position: relative;
 }
 
 br { clear: both; }
@@ -452,8 +489,8 @@ label.error{
 #cny_countdown{
 	height:108px;
 	width:251px;
-    left:900px;
-    bottom:500px;
+    	left:960px;
+    	bottom:600px;
 	position:fixed;
 }
 
@@ -466,9 +503,15 @@ label.error{
 
 #soc-button-share{
     display:block;
+    /*position:relative;
+    top: 20px;*/
+}
+
+#soc-button-single{
+    display:block;
     position:relative;
-top: 23px;
-right: -130px;
+    bottom: 140px;
+    left: 40px;
 }
 
 #submithome{
@@ -496,6 +539,42 @@ color:#1D7EC3;
 .bottom{
    height:650px;
    position:relative;
-   bottom:360px;
 }
 
+#rope_msg{
+	margin:0 auto;
+	position:relative;
+	top:0px;
+	right:280px;
+}
+
+.container2{
+	width:980px;
+	margin:0 auto;
+		height:100%;
+		min-height:100%;
+		margin:0 auto;
+}
+
+
+#sglmsg{
+	width:280px;
+	margin:0 auto;
+	position:relative;
+	bottom:125px;
+	left:-125px;
+	font-size:18px;
+}
+
+.addthis_single{
+	position:relative;
+	right:417px;
+	top:5px;
+}
+
+.bottom2{
+	position:absolute;
+	height:609px;
+	bottom:0;
+	left:200px;
+}
