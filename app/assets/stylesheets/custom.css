@@ -87,10 +87,23 @@ h2 {
 .addthis_toolbox {
     float:right;
     position:relative;
-    bottom:23px;
-    right: 4px;
+    bottom:0;
+    right:4px;
+    top:4px;
 
 }
+
+#add-single { right: 136px; }
+
+#soc-button-single {
+    display:block;
+    position:relative;
+    left:140px;
+    top:40px;
+}
+
+#add-user {top:-23px;}
+#add-thx {bottom:0px; top:0px;}
 
 .addthis_in{
     float:right;
