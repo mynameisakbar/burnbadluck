@@ -131,8 +131,7 @@ $(function(){
             name: 'Burn Your Bad Luck Now!',
             link: ' http://burnbadluck.com/',
             picture: 'https://lh3.googleusercontent.com/-eZ9ZbcEVw7w/TxC0zy-vDiI/AAAAAAAAANo/Gm5TW_RW6f4/s800/fbavatar.jpg',
-            caption: 'This is the content of the "caption" field.',
-            description: 'Dear friends, you shall now know the reason why you added me. It is my destiny to inform you how your luck can change for the better in the Dragon Year. I have submitted my bad luck to be incinerated, for free, by a group of powerful entities called The Burn Bad Luck BBQ Team. With bad luck gone, good luck will come. You can too enjoy their blessings at http://www.burnbadluck.com for great prosperity and other non-financial happiness.'
+            description: 'You shall now know the reason why you added me. It is my destiny to inform you how your luck can change for the better in the Dragon Year. I have submitted my bad luck to be incinerated, for free, by a group of powerful entities called The Burn Bad Luck BBQ Team. With bad luck gone, good luck will come. Check out the site to see how much bad luck is waiting to be incinerated.'
         });
     });
     
@@ -145,8 +144,7 @@ $(function(){
             name: 'Burn Your Bad Luck Now!',
             link: ' http://burnbadluck.com/submissions/' + id,
             picture: 'https://lh3.googleusercontent.com/-eZ9ZbcEVw7w/TxC0zy-vDiI/AAAAAAAAANo/Gm5TW_RW6f4/s800/fbavatar.jpg',
-            caption: 'This is the content of the "caption" field.',
-            description: 'Dear friends, you shall now know the reason why you added me. It is my destiny to inform you how your luck can change for the better in the Dragon Year. I have submitted my bad luck to be incinerated, for free, by a group of powerful entities called The Burn Bad Luck BBQ Team. With bad luck gone, good luck will come. You can too enjoy their blessings at http://www.burnbadluck.com for great prosperity and other non-financial happiness.'
+            description: 'You shall now know the reason why you added me. It is my destiny to inform you how your luck can change for the better in the Dragon Year. I have submitted my bad luck to be incinerated, for free, by a group of powerful entities called The Burn Bad Luck BBQ Team. With bad luck gone, good luck will come. Check out the site to see how much bad luck is waiting to be incinerated.'
         });
     });
 });
