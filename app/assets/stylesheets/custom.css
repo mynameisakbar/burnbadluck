@@ -59,6 +59,8 @@ h2 {
 
 #logo {
     float:left;
+    position:relative;
+    top:10px;
 }
 
 #about-link { 
@@ -86,6 +88,8 @@ h2 {
     float:right;
     position:relative;
     bottom:23px;
+right: 4px;
+
 }
 
 .team {
@@ -160,7 +164,7 @@ bottom: 5px
     display:none;
     position:relative;
     float:right;
-    bottom:117px;
+    bottom:114px;
     left:5px;
 }
 
@@ -175,10 +179,17 @@ label.footnote {
 #submission_name, #submission_email{
 	background:white;
 	position:relative;
-	width:240px;
-	margin-left:8px;
+	width:260px;
     vertical-align:top;
     bottom:4px;
+}
+
+#submission_email{
+	margin-left:5px;
+}
+
+#submission_name{
+	margin-left:6px;
 }
 
 label.error{
@@ -218,7 +229,7 @@ footer{
 }
 
 textarea {
-	width:280px;
+	width:290px;
 	height:100px;
 	padding 5px;
 	resize:none;
@@ -482,3 +493,10 @@ right: -130px;
 em{
 color:#1D7EC3;
 }
+
+.bottom{
+   height:650px;
+   position:relative;
+   bottom:360px;
+}
+

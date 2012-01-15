@@ -72,15 +72,20 @@
 				  </div> 	 		
 			  </nav>
 		  </header>
-		  <div class="section">
+		  <!--div class="section"-->
 			  <!--div id="text_cny"></div-->
 			  <div id="cny_countdown"></div>
 			  <div id="dragonR"></div>	 
 			  <div id="dragonL"></div>
 			  <%= yield %>
-		   </div>
-		  <footer>
-			  <%= image_tag("footer.png", :alt => "Footer") %>	
+			<div class="bottom">
+				<%= image_tag("footer.png", :alt => "Footer") %>	
+			</div>
+		   <!--/div-->
+
+			
+		  <!--footer>
+			  
 		  </footer>
 	</div>
 </body>
