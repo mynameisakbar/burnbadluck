@@ -18,7 +18,8 @@
 			<!-- AddThis Button END -->
 	 	</p>
 	 		
-    	<script>
+    	<% if request.fullpath == "/admin" %>
+    		<script>
 			$('.dd.edit').editable('/submissions/<%=submission.id%>', 
     				{
     					name   : "submission[content]",
@@ -34,7 +35,8 @@
         				authenticity_token: AUTH_TOKEN
         			}
     		});
-		</script>
-    	<dd><%= link_to 'Delete', submission, method: :delete %></dd>
+			</script>
+    		<dd><%= link_to 'Delete', submission, method: :delete %></dd>
+  		<% end %>
   	</div>
 <% end %>
