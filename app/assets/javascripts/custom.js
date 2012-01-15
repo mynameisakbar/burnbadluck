@@ -2,10 +2,10 @@ $(function(){
     var pathname = window.location.pathname;
     var colorbox = jQuery.colorbox;
     
-    /*$('#results').pageless({ totalPages: 10
-                       , url: '/submission/'
-                       , loaderMsg: 'Loading more results'
-                       });*/
+    $('#list-submission').pageless({ totalPages: 10,
+                                     url: '/submission/',
+                                     loaderMsg: 'Loading more results'
+    });
 
     
     // this is for COLORBOX

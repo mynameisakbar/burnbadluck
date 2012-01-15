@@ -80,16 +80,21 @@ class SubmissionsController < ApplicationController
   # GET /submissions.json
   def index
       @submissions = Submission.paginate(:page => params[:page], 
-                                         :per_page => 10,
+                                         :per_page => 2,
                                          :order => "created_at DESC")
       #@submissions = Submission.all
       @submission = Submission.new
-        
-      respond_to do |format|
-          format.html # index.html.erb
-          format.json { render json: @submissions }   
-          format.json { render json: @submission }
+      
+      if request.xhr?
+          sleep(3) # make request a little bit slower to see loader :-)
+          render :partial => @submissions
       end
+      
+      #respond_to do |format|
+          #format.html # index.html.erb
+          #format.json { render json: @submissions }   
+      #format.json { render json: @submission }
+      #end
   end
     
   protected
