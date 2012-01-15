@@ -1,9 +1,9 @@
 class SubmissionsController < ApplicationController
-  USERS = { "admin" => "test" }
+  USERS = { "admin" => "burnbabyburn" }
   before_filter :auth, :only => :index
     
-  http_basic_authenticate_with :name => "test", :password => "test", :only => :destroy 
-  http_basic_authenticate_with :name => "test", :password => "test", :only => :update
+  http_basic_authenticate_with :name => "admin", :password => "moderator", :only => :destroy 
+  http_basic_authenticate_with :name => "admin", :password => "moderator", :only => :update
 
   # GET /submissions/1
   # GET /submissions/1.json
