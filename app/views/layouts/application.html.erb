@@ -70,6 +70,7 @@ New Year." />
 	<div class="container"> 
 		   <header>
 			  <nav>
+				  <%= image_tag("logo.png", :alt => "Burn Bad Luck", :id => "logo") %>
 				  <%= image_tag("about-rope.png", :alt => "About Page", :id => "about-link" , :class => "normal-pop") %>
 				  <!--div id="about-link" class="normal-pop"></div-->  	 		
 				  <div id="soc-button-head">
@@ -87,15 +88,21 @@ New Year." />
 				  </div> 	 		
 			  </nav>
 		  </header>
-		  <%= image_tag("logo.png", :alt => "Burn Bad Luck", :id => "logo") %>
-				  
-		  <div id="cny_countdown"></div>
-		  <div id="dragonR"></div>	 
-		  <div id="dragonL"></div>
-		  <%= yield %>
-		  <div class="bottom">
-			<%= image_tag("footer.png", :alt => "Footer") %>	
-		  </div>
+		  <!--div class="section"-->
+			  <!--div id="text_cny"></div-->
+			  <div id="cny_countdown"></div>
+			  <div id="dragonR"></div>	 
+			  <div id="dragonL"></div>
+			  <%= yield %>
+			<div class="bottom">
+				<%= image_tag("footer.png", :alt => "Footer") %>	
+			</div>
+		   <!--/div-->
+
+			
+		  <!--footer>
+			  
+		  </footer>
 	</div>
 </body>
 </html>

@@ -58,9 +58,9 @@ h2 {
 /* This is for header */
 
 #logo {
-    position:fixed;
-    bottom:400px;
-    /*top:20px;*/
+    float:left;
+    position:relative;
+    top:20px;
 }
 
 #about-link { 
@@ -68,9 +68,8 @@ h2 {
     background:url(/assets/about-rope.png);*/
     width:120px;
     height:250px;
-    left:435px;
     position:relative;
-    /*left:15%;*/
+    left:15%;
     
 }
 
@@ -126,7 +125,7 @@ bottom: 5px
 #dragonR{
 	background:url(/assets/dragon-L.png);
 	background-repeat:no-repeat;
-	position:fixed;
+	position:relative;
 	height:300px;	
 	width:340px;
 }
@@ -134,9 +133,11 @@ bottom: 5px
 #dragonL{
 	background:url(/assets/dragon-r.png);
 	background-repeat:no-repeat;
-	position:fixed;
+	position:relative;
 	height:400px;
 	width:340px;
+	float:right;
+	bottom:300px;	
 }
 
 #main {
@@ -144,7 +145,7 @@ bottom: 5px
     width:500px;
     text-align:center;
     position:relative; 
-    top:100px;
+    top:-300px;
 }
 
 #h1 {
@@ -463,9 +464,9 @@ label.error{
 #cny_countdown{
 	height:108px;
 	width:251px;
-    left:900px;
-    bottom:500px;
-	position:fixed;
+	float:right;
+	position:relative;
+	bottom:170px;
 }
 
 #text_cny{
