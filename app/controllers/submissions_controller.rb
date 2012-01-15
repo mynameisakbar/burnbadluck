@@ -2,6 +2,7 @@ class SubmissionsController < ApplicationController
   USERS = { "admin" => "burnbabyburn" }
   before_filter :auth, :only => :index
     
+  http_basic_authenticate_with :name => "admin", :password => "moderator", :only => :destroy 
   http_basic_authenticate_with :name => "admin", :password => "moderator", :only => :update
 
   # GET /submissions/1
