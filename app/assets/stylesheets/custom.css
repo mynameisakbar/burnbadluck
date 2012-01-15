@@ -173,7 +173,7 @@ label.footnote {
 }
 
 #submission_name, #submission_email{
-	background:transparent;
+	background:white;
 	position:relative;
 	width:240px;
 	margin-left:8px;
@@ -222,7 +222,7 @@ textarea {
 	height:100px;
 	padding 5px;
 	resize:none;
-	background:transparent;
+	background:white;
 }
 
 /*h2 { margin: 0 }
@@ -308,7 +308,7 @@ div.field, div.actions {
 
 #recaptcha_response_field {
 	width: 295px;
-	background: transparent;
+	background: white;
 }
 
 #recaptcha_bttn {
