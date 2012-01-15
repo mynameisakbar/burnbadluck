@@ -50,17 +50,17 @@ New Year." />
 	<div class="container2">
 		<header>
 			<nav>
-				<a href="/submissions">
-					<%= image_tag("logo.png", :alt => "Burn Bad Luck", :id => "logo") %>
+				<a href="/">
+					<%= image_tag("logo.png", :alt => "Burn Bad Luck", :class => "logo-static") %>
 					<%= image_tag("submit.png", :alt => "Submit Your Badluck", :id => "submithome") %>
 				</a>
 			</nav>
 		</header>
 		
-		<div class="section">
 			<%= yield %>
-		</div>
-	
+		<div class="bottom2">
+			<%= image_tag("footer.png", :alt => "Footer") %>	
+		  </div>
 
 		<!--test comment-->
 	</div>
