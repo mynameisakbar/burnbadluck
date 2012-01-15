@@ -2,8 +2,8 @@ class SubmissionsController < ApplicationController
   USERS = { "admin" => "burnbabyburn" }
   before_filter :auth, :only => :index
     
-  http_basic_authenticate_with :name => "admin", :password => "moderator", :only => :destroy 
-  http_basic_authenticate_with :name => "admin", :password => "moderator", :only => :update
+    #http_basic_authenticate_with :name => "admin", :password => "moderator", :only => :destroy 
+    #http_basic_authenticate_with :name => "admin", :password => "moderator", :only => :update
 
   # GET /submissions/1
   # GET /submissions/1.json
@@ -105,7 +105,7 @@ class SubmissionsController < ApplicationController
         if @url == "/admin" 
             #flash[:error] = "haro"
             authenticate_or_request_with_http_digest do |username| 
-            USERS[username]
+                USERS[username]
                 #flash[:error] = "lol"
                 #reset_session
             end
