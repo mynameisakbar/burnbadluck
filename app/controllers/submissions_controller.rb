@@ -80,7 +80,7 @@ class SubmissionsController < ApplicationController
   # GET /submissions.json
   def index
       @submissions = Submission.paginate(:page => params[:page], 
-                                         :per_page => 2,
+                                         :per_page => 5,
                                          :order => "created_at DESC")
       #@submissions = Submission.all
       @submission = Submission.new
