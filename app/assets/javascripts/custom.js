@@ -123,7 +123,7 @@ $(function(){
 
 // this is for FB SHARE
 $(function(){
-    $('.share_button').click(function(e){
+    $('.share_button').live("click", function(e){
         e.preventDefault();
         FB.ui(
         {
@@ -136,7 +136,7 @@ $(function(){
         });
     });
     
-    $('.share_button_').click(function(e){
+    $('.share_button_').live("click", function(e){
         var id = $(this).attr("alt");
         e.preventDefault();
         FB.ui(
