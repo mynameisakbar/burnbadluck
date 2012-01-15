@@ -60,7 +60,7 @@ h2 {
 #logo {
     float:left;
     position:relative;
-    top:10px;
+    top:20px;
 }
 
 #about-link { 
@@ -181,7 +181,7 @@ label.footnote {
 	position:relative;
 	width:260px;
     vertical-align:top;
-    bottom:4px;
+    bottom:7px;
 }
 
 #submission_email{
