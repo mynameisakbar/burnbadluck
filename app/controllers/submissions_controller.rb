@@ -41,7 +41,7 @@ class SubmissionsController < ApplicationController
     respond_to do |format|
       if verify_recaptcha() && @submission.save
           Notifier.signup_email(@submission).deliver
-          format.html { redirect_to submissions_url, notice: @submission.content }
+          format.html { redirect_to :root, notice: @submission.content }
           format.json { render json: @submission, status: :created, location: @submission }
       else
         format.html { redirect_to submissions_url, notice: 'ERROR' }
