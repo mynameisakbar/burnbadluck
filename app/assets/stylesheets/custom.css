@@ -446,6 +446,7 @@ br { clear: both; }
 
 #share_button_head {
     position: relative;
+    cursor:pointer;
 }
 
 .share_button_{
