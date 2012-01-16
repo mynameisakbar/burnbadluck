@@ -63,7 +63,7 @@ $(function(){
     
     /* this is for COUNTDOWN TIMER*/
     $('#cny_countdown').countdown({
-        until: $.countdown.UTCDate(+7, 2012, 1 - 1, 21)});
+        until: $.countdown.UTCDate(+8, 2012, 1 - 1, 21, 9)});
     
     // this is for validation 
     //$("#new_submission").validate();
