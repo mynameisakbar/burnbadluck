@@ -19,10 +19,11 @@ $(function(){
             $("form").slideDown("slow");
         }
     });
-            
+        
+    $('#new_submission').validate();
+        
     $('#sbmt').live("click", function(){
         //alert("test");
-        $('#new_submission').validate();
         $('#new_submission').submit();
     });
         
