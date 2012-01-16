@@ -20,7 +20,7 @@ $(function(){
         }
     });
     
-    $('#sbmt').live("click", function(){
+    $('#sbmt').click(function() {
         //alert("test");
         $("form").validate();
         $('#new_submission').submit();
