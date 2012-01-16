@@ -90,6 +90,7 @@ h2 {
 #soc-button-thx {
     position:relative;
     float:left;
+    bottom:18px;
 }
 
 .addthis_toolbox {
