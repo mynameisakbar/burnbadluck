@@ -13,6 +13,12 @@ body{
     background-repeat:repeat;
 }
 
+.countdown_amount
+{
+    position:relative;
+    top:10px;
+}
+
 @font-face {
     font-family: 'BebasRegular';
     src: url('font/BEBAS___-webfont.eot');
