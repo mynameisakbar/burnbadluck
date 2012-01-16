@@ -93,6 +93,8 @@ h2 {
     top:30px;
 }
 
+#hidden-id {display:none;}
+
 .addthis_toolbox {
     float:right;
     position:relative;

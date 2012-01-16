@@ -141,7 +141,8 @@ $(function(){
     });
     
     $('.share_button_').click(function(e){
-        var id = $(this).attr("alt");
+        var id = $('#hidden-id').text();
+        alert(id);
         e.preventDefault();
         FB.ui(
         {
