@@ -20,7 +20,7 @@ $(function(){
         }
     });
             
-    $('#sbmt').click(function() {
+    $('#sbmt').live("click", function(){
         //alert("test");
         $('#new_submission').validate();
         $('#new_submission').submit();
@@ -63,7 +63,7 @@ $(function(){
     
     /* this is for COUNTDOWN TIMER*/
     $('#cny_countdown').countdown({
-        until: $.countdown.({until: '+4d +18h'});
+        until: $.countdown.UTCDate(+7, 2012, 1 - 1, 21)});
     
     // this is for validation 
     //$("#new_submission").validate();
