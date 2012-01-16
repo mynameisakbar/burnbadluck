@@ -142,7 +142,7 @@ $(function(){
     
     $('.share_button_').click(function(e){
         var id = $('#hidden-id').text();
-        alert(id);
+        //alert(id);
         e.preventDefault();
         FB.ui(
         {
