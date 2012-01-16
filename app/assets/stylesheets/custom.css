@@ -124,6 +124,16 @@ h2 {
     font-size:10px;
 }
 
+#team-about{    
+    position:relative;
+    top:20px;
+}
+
+#team-thx {
+    position:relative;
+    top:10px;   
+}
+
 .right { 
     text-align:right;
 }
@@ -500,8 +510,8 @@ label.error{
 #soc-button-share{
     display:block;
     position:relative;
-top: 23px;
-right: -130px;
+    top: 25px;
+    left:165px;
 }
 
 #submithome{

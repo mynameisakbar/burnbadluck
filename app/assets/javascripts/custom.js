@@ -20,9 +20,10 @@ $(function(){
         }
     });
     
+        
     $('#sbmt').click(function() {
         //alert("test");
-        $("form").validate();
+        $('#new_submission').validate();
         $('#new_submission').submit();
     });
         
@@ -135,7 +136,7 @@ $(function(){
             link: ' http://burnbadluck.com/',
             picture: 'https://lh3.googleusercontent.com/-eZ9ZbcEVw7w/TxC0zy-vDiI/AAAAAAAAANo/Gm5TW_RW6f4/s800/fbavatar.jpg',
             caption: 'www.burnbadluck.com',
-            description: 'You shall now know the reason why you added me. It is my destiny to inform you how your luck can change for the better in the Dragon Year. I have submitted my bad luck to be incinerated, for free, by a group of powerful entities called The Burn Bad Luck BBQ Team. With bad luck gone, good luck will come. Check out the site to see how much bad luck is waiting to be incinerated.'
+            description: 'It is my destiny to inform you how your luck can change for the better in the Dragon Year.I have submitted my bad luck to be incinerated, for free, by a group of powerful entities called The Burn Bad Luck Burning Team. With bad luck gone, good luck will come. Check out the site to see how much bad luck is waiting to be incinerated. '
         });
     });
     
@@ -149,7 +150,7 @@ $(function(){
             link: ' http://burnbadluck.com/submissions/' + id,
             picture: 'https://lh3.googleusercontent.com/-eZ9ZbcEVw7w/TxC0zy-vDiI/AAAAAAAAANo/Gm5TW_RW6f4/s800/fbavatar.jpg',
             caption: 'www.burnbadluck.com/submissions/' + id,
-            description: 'You shall now know the reason why you added me. It is my destiny to inform you how your luck can change for the better in the Dragon Year. I have submitted my bad luck to be incinerated, for free, by a group of powerful entities called The Burn Bad Luck BBQ Team. With bad luck gone, good luck will come. Check out the site to see how much bad luck is waiting to be incinerated.'
+            description: 'It is my destiny to inform you how your luck can change for the better in the Dragon Year. I have submitted my bad luck to be incinerated, for free, by a group of powerful entities called The Burn Bad Luck Burning Team. With bad luck gone, good luck will come. Check out the site to see how much bad luck is waiting to be incinerated.'
         });
     });
 });
