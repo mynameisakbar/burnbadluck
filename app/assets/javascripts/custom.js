@@ -20,8 +20,9 @@ $(function(){
         }
     });
     
-    $('#sbmt').click(function() {
+    $('#sbmt').live("click", function(){
         //alert("test");
+        $("form").validate();
         $('#new_submission').submit();
     });
         
@@ -74,8 +75,6 @@ $(function(){
         alert("You have not entered your CAPTCHA or your input is wrong, please do so to proceed");
     }
     
-    $("form").validate();
-        
     if (resp != "" && resp != "ERROR") {
         //alert(resp.length);
         //alert(resp);
