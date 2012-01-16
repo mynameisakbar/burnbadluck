@@ -72,7 +72,7 @@ $(function(){
     var content = $("#submission_content").val();
     var resp = $("#notice").text();
     if (resp == "ERROR") {
-        alert("You have not entered your CAPTCHA or your input is wrong, please do so to proceed");
+        alert("You have not entered your CAPTCHA or your input is wrong. Please submit your bad luck again.");
     }
     
     if (resp != "" && resp != "ERROR") {
