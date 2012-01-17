@@ -1,4 +1,3 @@
-<% @submissions.each do |submission| %>
 	<div id="now" class="dl">
 		<b><%= submission.name %></b>
 		<p style="display:none;"><%= submission.id %></p>
@@ -35,4 +34,3 @@
     		<dd><%= link_to 'Delete', submission, method: :delete %></dd>
   		<% end %>
   	</div>
-<% end %>

@@ -42,18 +42,19 @@
 	<div id ="list-submission">
 	    <%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
 		<!--%= will_paginate %-->
-		<%= render(:partial => "submission") %>
-  		<% if request.fullpath == "/" %>
-  			<%= will_paginate(@submissions) %>
-  			<script src="/javascripts/jquery.pageless.js?body=1" type="text/javascript"></script>
-  			<script>
-  				$('#list-submission').pageless({ totalPages: 10,
-                                     url: '/submissions/',
-                                     loaderMsg: 'Loading more results'
-   				});
-  			</script>
-  		<% end %>
+		<%= render(:partial => "submission", :collection => @submissions) %>
 	</div>
+	
+	<% if request.fullpath == "/" %>
+		<%= will_paginate(@submissions) %>
+		<script src="/javascripts/jquery.pageless.js?body=1" type="text/javascript"></script>
+		<script>
+			$('#list-submission').pageless({ totalPages: 10,
+								 url: '/submissions/',
+								 loaderMsg: 'Loading more results'
+			});
+		</script>
+  	<% end %>
 	<br /><br/>
 </div>
 
