@@ -79,24 +79,37 @@ class SubmissionsController < ApplicationController
   # GET /submissions
   # GET /submissions.json
   def index
-      @submissions = Submission.paginate(:page => params[:page], 
-                                         :per_page => 7,
-                                         :order => "created_at DESC")
-      #@submissions = Submission.all
-      @submission = Submission.new
-      
-      if request.xhr?
-          sleep(3) # make request a little bit slower to see loader :-)
-          render :partial => @submissions
-      end
-      
-      #respond_to do |format|
+      @url = request.fullpath
+      if @url == "/admin"
+          #flash[:error] = "haro"
+          @submissions = Submission.all        #@submissions = Submission.all
+          
+          
+          respond_to do |format|
+              format.html # index.html.erb
+              format.json { render json: @submissions }
+          end
+      else
+          #flash[:error] = "haro2"
+          @submissions = Submission.paginate(:page => params[:page], 
+                                             :per_page => 7,
+                                             :order => "created_at DESC")
+          #@submissions = Submission.all
+          @submission = Submission.new
+          
+          if request.xhr?
+              sleep(3) # make request a little bit slower to see loader :-)
+              render :partial => @submissions
+          end
+          
+          #respond_to do |format|
           #format.html # index.html.erb
           #format.json { render json: @submissions }   
-      #format.json { render json: @submission }
-      #end
+          #format.json { render json: @submission }
+          #end
+      end    
   end
-    
+      
   protected
     def auth
         #flash[:error] = request.fullpath
