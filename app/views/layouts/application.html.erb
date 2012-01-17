@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"
-     xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" itemscope itemtype="http://schema.org/Article">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	  dir="ltr" lang="en-US"
+	  xmlns:fb="http://www.facebook.com/2008/fbml" 
+	  xmlns:og="http://ogp.me/ns#"s>
 <head>
   <title>Burn Bad Luck</title>
   <link rel="shortcut icon" href="/favicon.ico" />
@@ -44,6 +46,19 @@ New Year.">
   </script>
   <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f109f98300e17b5"></script>
   <%= csrf_meta_tags %>
+  <script type="text/javascript">
+      function about() {
+        info = document.getElementById('about-content');
+        if (window.XMLHttpRequest)
+          { xhr = new XMLHttpRequest(); }
+        else
+          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
+        xhr.open("GET","rails/info/properties",false);
+        xhr.send("");
+        info.innerHTML = xhr.responseText;
+        info.style.display = 'block'
+      }
+  </script>
 </head>
 <body>
 	<div id="fb-root"></div>
