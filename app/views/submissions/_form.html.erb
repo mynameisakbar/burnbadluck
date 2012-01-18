@@ -2,9 +2,10 @@
   <div class="field">
   	<%= label_tag(:submission_content, "WHAT DO YOU WANT TO BURN?") %>
   	<p>
-  		<%= label_tag(:submission_content, "eg: ex-girlfriends, evil neighbors, crazy bosses, etc.(Maximum 200 characters)", :class => "footnote") %>
+  		<%= label_tag(:submission_content, "eg: ex-girlfriends, evil neighbors, crazy bosses, etc.", :id => "eg", :class => "footnote") %>
+  		<%= label_tag(:submission_content, "(Maximum 200 characters)", :class => "footnote") %>
   	</p>
-	<%= text_area(:submission, :content, :class => "required", :maxlength => "140") %>
+		<%= text_area(:submission, :content, :class => "required", :maxlength => "140") %>
   	<p>
   		<%= label_tag(:submission_content, "*Y&R reserves the right to remove any inappropriate submissions", :class => "footnote") %>
   	</p>

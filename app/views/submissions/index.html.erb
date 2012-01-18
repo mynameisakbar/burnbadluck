@@ -24,39 +24,42 @@
 					 style="width:60px; height:20px;"></iframe>
 				 </div>
 	 </section>
-	<div id="new-submission-div" class="pad15">
-		<p><%= flash[:error] %></p>
-		<div id="bef_toggle">
-			<!--p id="thx">Test</p-->
-			<!--div id="h1">SUBMIT YOUR BAD LUCK</div>
-			<div id="h3">START LUCKY FOR THE LUNAR NEW YEAR</div-->
-			<img id="submit-text" src="/assets/submit-text.png">
-			<p id="toggle_open">CLICK HERE</p>
-		</div>
-		
-		
-		<%= image_tag("close.png", :alt => "Close", :id => "toggle_close") %>
-		<%= render 'form' %>
-	</div>
-
-	<div id ="list-submission">
-	    <%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
-		<!--%= will_paginate %-->
-		<%= render(:partial => "submission", :collection => @submissions) %>
-	</div>
-	
-	<% if request.fullpath == "/" %>
-		<%= will_paginate(@submissions) %>
-		<script src="/javascripts/jquery.pageless.js?body=1" type="text/javascript"></script>
-		<script>
-			$('#list-submission').pageless({ totalPages: 100,
-								 url: '/submissions/',
-								 loaderMsg: 'Loading more results'
-			});
-		</script>
-  	<% end %>
-  	
-	<br /><br/>
+	<!--p id="test">TEST</p-->
+	<!--div id="burn"-->
+		 <div id="new-submission-div" class="pad15">
+			 <p><%= flash[:error] %></p>
+			 <div id="bef_toggle">
+				 <!--p id="thx">Test</p-->
+				 <!--div id="h1">SUBMIT YOUR BAD LUCK</div>
+				 <div id="h3">START LUCKY FOR THE LUNAR NEW YEAR</div-->
+				 <img id="submit-text" src="/assets/submit-text.png">
+				 <p id="toggle_open">CLICK HERE</p>
+			 </div>
+			 
+			 
+			 <%= image_tag("close.png", :alt => "Close", :id => "toggle_close") %>
+			 <%= render 'form' %>
+		 </div>
+	 
+		 <div id ="list-submission">
+			 <%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
+			 <!--%= will_paginate %-->
+			 <%= render(:partial => "submission", :collection => @submissions) %>
+		 </div>
+		 
+		 <% if request.fullpath == "/" %>
+			 <%= will_paginate(@submissions) %>
+			 <script src="/javascripts/jquery.pageless.js?body=1" type="text/javascript"></script>
+			 <script>
+				 $('#list-submission').pageless({ totalPages: 100,
+									  url: '/submissions/',
+									  loaderMsg: 'Loading more results'
+				 });
+			 </script>
+		 <% end %>
+		 
+		 <br /><br/>
+	 </div>
 </div>
 
 <!--div id="timer">

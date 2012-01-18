@@ -1,5 +1,9 @@
 /* This is for parent */
 
+#burn { position:relative; }
+
+#eg { display:block; }
+
 html 
 {
 	height:100%;

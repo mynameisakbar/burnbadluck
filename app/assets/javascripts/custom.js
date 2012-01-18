@@ -2,6 +2,15 @@ $(function(){
     var pathname = window.location.pathname;
     var colorbox = jQuery.colorbox;
     
+    /*$("#test").click(function(){
+        //alert("test");
+        $("#burn").animate(
+        {"top": "+=1100px"}, 
+        {
+            duration:2500
+        });
+    });*/
+        
     // this is for COLORBOX
     $('#about-link').colorbox(
     {
