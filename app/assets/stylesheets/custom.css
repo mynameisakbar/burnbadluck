@@ -314,6 +314,7 @@ bottom: 30px;
   width:320px;
   position:relative;
   font-family:bebas;
+  bottom: 8px;
 }
 
 #toggle{
@@ -423,7 +424,7 @@ div.field, div.actions {
 
 #list-submission{
 	position:relative;
-	bottom:20px;
+	bottom:8px;
 	font-family:helvetica;
 }
 
