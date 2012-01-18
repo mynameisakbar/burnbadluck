@@ -49,7 +49,7 @@
 		<%= will_paginate(@submissions) %>
 		<script src="/javascripts/jquery.pageless.js?body=1" type="text/javascript"></script>
 		<script>
-			$('#list-submission').pageless({ totalPages: 10,
+			$('#list-submission').pageless({ totalPages: 100,
 								 url: '/submissions/',
 								 loaderMsg: 'Loading more results'
 			});
