@@ -1,6 +1,9 @@
 <%= form_tag("/submissions", :method => "post", :id => "new_submission", :class => "new_submission") do %>
   <div class="field">
-  	<%= label_tag(:submission_content, "BAD LUCK MESSAGE (Maximum 200 characters)*") %>
+  	<%= label_tag(:submission_content, "WHAT DO YOU WANT TO BURN?") %>
+  	<p>
+  		<%= label_tag(:submission_content, "eg: ex-girlfriends, evil neighbors, crazy bosses, etc.(Maximum 200 characters)", :class => "footnote") %>
+  	</p>
 	<%= text_area(:submission, :content, :class => "required", :maxlength => "140") %>
   	<p>
   		<%= label_tag(:submission_content, "*Y&R reserves the right to remove any inappropriate submissions", :class => "footnote") %>
