@@ -38,8 +38,8 @@ body{
 	background:url(/assets/bg.jpg);
 	background-repeat:no-repeat;
 	width:1000px;
-	height:100%;
-	min-height:100%;
+	height:50px;
+	/*min-height:100%;*/
 	margin:0 auto;
 	padding-bottom:652px;
 }
@@ -548,5 +548,6 @@ color:#1D7EC3;
 .bottom{ 	
     height:650px;
     position:relative;
+    bottom:200px;
 }
 
